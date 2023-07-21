@@ -72,6 +72,7 @@ class CNN_Trainer():
                 
                 mse_loss.backward() # loss_fn should be the one used for backpropagation
                 self.optimizer.step()
+                self.scheduler.step()
 
                 train_mse_sum += mse_loss.item()*input.size(0)
                 train_mae_sum += mae_loss.item()*input.size(0)
@@ -121,11 +122,11 @@ class CNN_Trainer():
                 valid_mse_list.append(valid_mse_avg)
                 valid_mae_list.append(valid_mae_avg)
                 
-                self.scheduler.step(valid_mse_avg)
+                # self.scheduler.step(valid_mse_avg)
                 print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
                 print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
                 
-                self.save(self.epoch+1)
+                # self.save(self.epoch+1)
 
                 # save model if better validation loss
                 if valid_mse_avg < valid_loss_min:
@@ -159,12 +160,16 @@ class CNN_Trainer():
         torch.save({"epoch": milestone-1, 
                     "state_dict": self.model.state_dict(), 
                     "optimizer" : self.optimizer.state_dict(),
-                    "scheduler" : self.scheduler.state_dict()}, 
+                    "scheduler" : self.scheduler.state_dict(),
+                    "learning_rate" : self.optimizer.param_groups[0]['lr']},  # Save current learning rate
                     f"{self.results_folder}/3d_cnn-{milestone}.pth.tar")
+
         
     def load(self, milestone):
         checkpoint = torch.load(f"{self.results_folder}/3d_cnn-{milestone}.pth.tar")
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])
         self.scheduler.load_state_dict(checkpoint["scheduler"])
+        # Load saved learning rate (if necessary)
+        learning_rate = checkpoint["learning_rate"]
         self.epoch = checkpoint["epoch"] + 1  # Start the next epoch after the checkpoint
