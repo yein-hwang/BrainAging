@@ -13,7 +13,6 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
   - 다양한 배치 사이즈(8, 16, 32)로 실험 진행.
   - 배치 사이즈 8과 16에서는 큰 변화가 없었음.
   - 현재 배치 사이즈 32로 실험 중.
-  - wandb에서 결과 확인 가능: https://wandb.ai/yein-hwang/lr_test?workspace=user-yein-hwang
 - Learning Rate tuning
   - `lr_scheduler.py` 파일에 구현된 `CustomCosineAnnealingWarmUpStart`
     - log: https://wandb.ai/yein-hwang/lr_test?workspace=user-yein-hwang 
