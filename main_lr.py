@@ -12,7 +12,7 @@ from lr_scheduler import CustomCosineAnnealingWarmUpRestarts
 
 import torch
 import torch.optim as optim
-from torch.utils.data import DataLoader, RandomSampler
+from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from torchsummary import summary
 
 args = parse_args()
@@ -35,6 +35,7 @@ INPUT_SIZE = config.input_size
 LEARNING_RATE = config.lr
 WARMUP_EPOCHS = 10
 OUTPUT = config.output
+N_WOKERS = config.num_cpu_workers
 
 
 
@@ -50,20 +51,18 @@ train_indices, valid_indices = train_test_split(indices, test_size=0.25, random_
 train_dataset = UKB_Dataset(config, train_indices)
 valid_dataset = UKB_Dataset(config, valid_indices)
 
-n_workers = 4 * ngpus
-
 dataloader_train = DataLoader(train_dataset, 
                               batch_size=BATCH_SIZE, 
                               sampler=RandomSampler(train_dataset),
                               collate_fn=train_dataset.collate_fn,
                               pin_memory=True,
-                              num_workers=n_workers)
+                              num_workers=N_WOKERS)
 dataloader_valid = DataLoader(valid_dataset, 
                               batch_size=BATCH_SIZE, 
-                              sampler=RandomSampler(valid_dataset),
+                              sampler=SequentialSampler(valid_dataset),
                               collate_fn=valid_dataset.collate_fn,
                               pin_memory=True,
-                              num_workers=n_workers)
+                              num_workers=N_WOKERS)
 
 
 # Define model and optimizer

@@ -1,0 +1,390 @@
+{
+    "os": "Linux-4.15.0-72-generic-x86_64-with-glibc2.27",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-07-21T12:05:02.579721",
+    "startedAt": "2023-07-21T12:05:01.099277",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size",
+        "32",
+        "--n_workers",
+        "2",
+        "--epochs",
+        "40",
+        "--output",
+        "model/cust_test",
+        "--ensemble_number",
+        "32",
+        "--lr",
+        "1e-6"
+    ],
+    "state": "running",
+    "program": "/media/leelabsg-storage1/yein/research/BrainAging/0718/main_lr.py",
+    "codePath": "main_lr.py",
+    "git": {
+        "remote": "https://github.com/yein-hwang/brain_aging.git",
+        "commit": "d026dc3d149f3b52d3a11c0132964448cb6ef6a7"
+    },
+    "email": "yein.y.hwang@snu.ac.kr",
+    "root": "/media/leelabsg-storage1/yein/research/BrainAging/0718",
+    "host": "a07",
+    "username": "yeinhwang",
+    "executable": "/home/n1/yeinhwang/anaconda3/envs/ba_torch/bin/python",
+    "cpu_count": 32,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 0.8644374999999995,
+        "min": 800.0,
+        "max": 2101.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1.044,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.801,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.801,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.845,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.801,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 2.1,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1.546,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.883,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.96,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.956,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1.189,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1.016,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.799,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1.038,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 2.1,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 1.318,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.856,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.887,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.981,
+            "min": 800.0,
+            "max": 2101.0
+        },
+        {
+            "current": 0.875,
+            "min": 800.0,
+            "max": 2101.0
+        }
+    ],
+    "disk": {
+        "total": 228.22814559936523,
+        "used": 21.38909149169922
+    },
+    "gpu": "NVIDIA TITAN RTX",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25396838400
+        },
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25396838400
+        },
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25396838400
+        },
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25396838400
+        }
+    ],
+    "memory": {
+        "total": 472.0558662414551
+    }
+}

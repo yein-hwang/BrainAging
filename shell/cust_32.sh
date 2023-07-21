@@ -12,7 +12,7 @@
 
 source /home/username/.bashrc
 
-echo "CustomCosineAnnealingWarmUpRestarts 적용, batch size: 32"
+echo "CustomCosineAnnealingWarmUpRestarts 적용, batch size: 32, n_workers: 16"
 
-python main_lr.py --batch_size 32 --epochs 40 --output 'model/cust_' --ensemble_number 32 --lr 1e-6
+python main_lr.py --batch_size 32 --n_workers 4 --epochs 40 --output 'model/cust_' --ensemble_number 32 --lr 1e-6
 
