@@ -15,8 +15,10 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
   - 현재 배치 사이즈 32로 실험 중.
   - wandb에서 결과 확인 가능: https://wandb.ai/yein-hwang/lr_test?workspace=user-yein-hwang
 - Learning Rate tuning
-  - `lr_scheduler.py` 파일에 구현된 `CustomCosineAnnealingWarmUpStart` 사용 중.
-  - 디폴트로 제공되는 CosineAnealing 실험 기록: https://wandb.ai/yein-hwang/BrainAging_lr_test?workspace=user-yein-hwang
+  - `lr_scheduler.py` 파일에 구현된 `CustomCosineAnnealingWarmUpStart`
+    - log: https://wandb.ai/yein-hwang/lr_test?workspace=user-yein-hwang 
+  - 디폴트로 제공되는 `CosineAnealing`
+    - log: https://wandb.ai/yein-hwang/BrainAging_lr_test?workspace=user-yein-hwang
 - n_workers
   - `Dataloader` 과정에서 효율적인 병렬처리를 위해 설정할 수 있는 num_workers 조건 실험
   - `8`로 진행하는 것이 제일 효율적일 것 같음
