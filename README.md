@@ -42,7 +42,10 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
     - step 단위 update: `CustomCosineAnnealingWarmUpStart`, `CosineAnealing`
       - `CustomCosineAnnealingWarmUpStart`
         - `learning_rate` 디렉토리에 위치
-        - `lr_simulator.py`: Parameter setting에 따라 learning rate update 시각화 구현 
+        - `lr_simulator.py`: Parameter setting에 따라 learning rate update 시각화 구현
+        - ![image](https://github.com/yein-hwang/brain_aging/assets/109208473/c6dd356f-6b1b-4dc7-a2b7-fe2088d6f478)
+
+
     - epoch 단위: `ReduceLROnPlateau`
   - log: https://wandb.ai/yein-hwang/Brain_Aging
 - 추가 참고 사항
