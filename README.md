@@ -20,7 +20,7 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
 - n_workers
   - `Dataloader` 과정에서 효율적인 병렬처리를 위해 설정할 수 있는 num_workers 조건 실험 -> `8`로 진행하는 것이 제일 효율적일 것 같음
     - `> 64` : 한 시간 경과 후 training이 진행되지 않아 kill 한 후 아래 에러 확인
-      > `DataLoader worker (pid(s) 38532, 38911, 38974, 39606, 41309) exited unexpectedly`
+      `DataLoader worker (pid(s) 38532, 38911, 38974, 39606, 41309) exited unexpectedly`
     - `32` : 10% 진행 기준 23분 소요
     - `16` : 10% 진행 기준 29분 소요
     - `8` : 10% 진행 기준 16분 소요
