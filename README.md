@@ -1,5 +1,5 @@
 # BrainAging
-Reproducing Brain Aging paper using the Tensorflow and PyTorch libarary.
+Reproducing Brain Aging paper using the PyTorch library.
 
 ### Paper
 Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Aging Jangho Kim, Junhyeong Lee, Seunggeun Lee medRxiv 2022.03.04.22271813; doi: https://doi.org/10.1101/2022.03.04.22271813
