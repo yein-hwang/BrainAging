@@ -1,0 +1,15 @@
+Age distribution:  count    25656.000000
+mean        60.416004
+std          7.382716
+min         44.000000
+25%         54.750000
+50%         61.000000
+75%         66.000000
+max         77.000000
+Name: age, dtype: float64
+확인
+확인
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BrainAging/0722/main.py", line 52, in <module>
+    scheduler = lr.CustomCosineAnnealingWarmUpRestarts(T_0=100, T_up=10, T_mult=2, eta_max=1e-3, gamma=0.5)
+TypeError: __init__() missing 1 required positional argument: 'optimizer'

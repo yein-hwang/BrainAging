@@ -1,0 +1,97 @@
+2023-07-22 05:05:16,250 INFO    StreamThr :62351 [internal.py:wandb_internal():86] W&B internal server running at pid: 62351, started at: 2023-07-22 05:05:16.248325
+2023-07-22 05:05:16,253 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: status
+2023-07-22 05:05:16,254 INFO    WriterThread:62351 [datastore.py:open_for_write():85] open: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_050516-i0w6b1ps/run-i0w6b1ps.wandb
+2023-07-22 05:05:16,257 DEBUG   SenderThread:62351 [sender.py:send():369] send: header
+2023-07-22 05:05:16,258 DEBUG   SenderThread:62351 [sender.py:send():369] send: run
+2023-07-22 05:05:16,876 INFO    SenderThread:62351 [dir_watcher.py:__init__():211] watching files in: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_050516-i0w6b1ps/files
+2023-07-22 05:05:16,876 INFO    SenderThread:62351 [sender.py:_start_run_threads():1100] run started: i0w6b1ps with start time 1689969916.246459
+2023-07-22 05:05:16,876 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 05:05:16,878 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: check_version
+2023-07-22 05:05:16,901 INFO    SenderThread:62351 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 05:05:16,902 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: check_version
+2023-07-22 05:05:17,031 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: run_start
+2023-07-22 05:05:17,036 DEBUG   HandlerThread:62351 [system_info.py:__init__():31] System info init
+2023-07-22 05:05:17,036 DEBUG   HandlerThread:62351 [system_info.py:__init__():46] System info init done
+2023-07-22 05:05:17,036 INFO    HandlerThread:62351 [system_monitor.py:start():181] Starting system monitor
+2023-07-22 05:05:17,036 INFO    SystemMonitor:62351 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-22 05:05:17,036 INFO    HandlerThread:62351 [system_monitor.py:probe():201] Collecting system info
+2023-07-22 05:05:17,037 INFO    SystemMonitor:62351 [interfaces.py:start():190] Started cpu monitoring
+2023-07-22 05:05:17,037 INFO    SystemMonitor:62351 [interfaces.py:start():190] Started disk monitoring
+2023-07-22 05:05:17,039 INFO    SystemMonitor:62351 [interfaces.py:start():190] Started gpu monitoring
+2023-07-22 05:05:17,042 INFO    SystemMonitor:62351 [interfaces.py:start():190] Started memory monitoring
+2023-07-22 05:05:17,043 INFO    SystemMonitor:62351 [interfaces.py:start():190] Started network monitoring
+2023-07-22 05:05:17,098 DEBUG   HandlerThread:62351 [system_info.py:probe():195] Probing system
+2023-07-22 05:05:17,134 DEBUG   HandlerThread:62351 [system_info.py:_probe_git():180] Probing git
+2023-07-22 05:05:17,145 DEBUG   HandlerThread:62351 [system_info.py:_probe_git():188] Probing git done
+2023-07-22 05:05:17,145 DEBUG   HandlerThread:62351 [system_info.py:probe():240] Probing system done
+2023-07-22 05:05:17,145 DEBUG   HandlerThread:62351 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-72-generic-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-07-21T20:05:17.098301', 'startedAt': '2023-07-21T20:05:16.200322', 'docker': None, 'cuda': None, 'args': ('--batch_size', '32', '--n_workers', '8', '--epochs', '40', '--output', 'model/plateau_', '--ensemble_number', '32', '--lr', '1e-6', '--lr_scheduler_choice', '3'), 'state': 'running', 'program': '/media/leelabsg-storage1/yein/research/BrainAging/0722/main.py', 'codePath': '0722/main.py', 'git': {'remote': None, 'commit': None}, 'email': 'yein.y.hwang@snu.ac.kr', 'root': '/media/leelabsg-storage1/yein/research/BrainAging', 'host': 'a07', 'username': 'yeinhwang', 'executable': '/home/n1/yeinhwang/anaconda3/envs/ba_torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 0.8260468749999991, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 2.1, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.857, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 2.099, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.881, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 228.22814559936523, 'used': 21.389148712158203}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}], 'memory': {'total': 472.0558662414551}}
+2023-07-22 05:05:17,146 INFO    HandlerThread:62351 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-22 05:05:17,146 INFO    HandlerThread:62351 [system_monitor.py:probe():214] Publishing system info
+2023-07-22 05:05:17,146 DEBUG   HandlerThread:62351 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-22 05:05:17,159 DEBUG   HandlerThread:62351 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-22 05:05:17,160 DEBUG   HandlerThread:62351 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-22 05:05:17,880 INFO    Thread-12 :62351 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_050516-i0w6b1ps/files/wandb-summary.json
+2023-07-22 05:05:17,881 INFO    Thread-12 :62351 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_050516-i0w6b1ps/files/requirements.txt
+2023-07-22 05:05:17,881 INFO    Thread-12 :62351 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_050516-i0w6b1ps/files/conda-environment.yaml
+2023-07-22 05:05:24,906 INFO    Thread-12 :62351 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_050516-i0w6b1ps/files/conda-environment.yaml
+2023-07-22 05:05:24,907 DEBUG   HandlerThread:62351 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-22 05:05:24,925 INFO    HandlerThread:62351 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-22 05:05:24,932 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 05:05:24,932 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-22 05:05:24,933 DEBUG   SenderThread:62351 [sender.py:send():369] send: files
+2023-07-22 05:05:24,933 INFO    SenderThread:62351 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-22 05:05:24,944 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 05:05:24,944 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 05:05:25,227 DEBUG   SenderThread:62351 [sender.py:send():369] send: telemetry
+2023-07-22 05:05:25,231 DEBUG   SenderThread:62351 [sender.py:send():369] send: exit
+2023-07-22 05:05:25,231 INFO    SenderThread:62351 [sender.py:send_exit():574] handling exit code: 1
+2023-07-22 05:05:25,231 INFO    SenderThread:62351 [sender.py:send_exit():576] handling runtime: 7
+2023-07-22 05:05:25,237 INFO    SenderThread:62351 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 05:05:25,237 INFO    SenderThread:62351 [sender.py:send_exit():582] send defer
+2023-07-22 05:05:25,238 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,238 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-22 05:05:25,238 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,238 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-22 05:05:25,239 INFO    SenderThread:62351 [sender.py:transition_state():602] send defer: 1
+2023-07-22 05:05:25,239 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,239 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-22 05:05:25,239 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,239 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-22 05:05:25,239 INFO    SenderThread:62351 [sender.py:transition_state():602] send defer: 2
+2023-07-22 05:05:25,239 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,239 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-22 05:05:25,240 INFO    HandlerThread:62351 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-22 05:05:25,240 DEBUG   SystemMonitor:62351 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-22 05:05:25,240 DEBUG   SystemMonitor:62351 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-22 05:05:25,240 DEBUG   SystemMonitor:62351 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-22 05:05:25,240 INFO    HandlerThread:62351 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-22 05:05:25,245 INFO    HandlerThread:62351 [interfaces.py:finish():202] Joined disk monitor
+2023-07-22 05:05:25,483 INFO    HandlerThread:62351 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-22 05:05:25,483 INFO    HandlerThread:62351 [interfaces.py:finish():202] Joined memory monitor
+2023-07-22 05:05:25,483 INFO    HandlerThread:62351 [interfaces.py:finish():202] Joined network monitor
+2023-07-22 05:05:25,484 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,484 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-22 05:05:25,484 INFO    SenderThread:62351 [sender.py:transition_state():602] send defer: 3
+2023-07-22 05:05:25,484 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,484 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-22 05:05:25,484 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,484 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-22 05:05:25,484 INFO    SenderThread:62351 [sender.py:transition_state():602] send defer: 4
+2023-07-22 05:05:25,484 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,484 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-22 05:05:25,484 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,484 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-22 05:05:25,484 INFO    SenderThread:62351 [sender.py:transition_state():602] send defer: 5
+2023-07-22 05:05:25,484 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,484 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-22 05:05:25,485 DEBUG   SenderThread:62351 [sender.py:send():369] send: summary
+2023-07-22 05:05:25,489 INFO    SenderThread:62351 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 05:05:25,490 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,490 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-22 05:05:25,490 INFO    SenderThread:62351 [sender.py:transition_state():602] send defer: 6
+2023-07-22 05:05:25,490 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 05:05:25,490 INFO    HandlerThread:62351 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-22 05:05:25,490 DEBUG   SenderThread:62351 [sender.py:send_request():396] send_request: defer
+2023-07-22 05:05:25,490 INFO    SenderThread:62351 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-22 05:05:25,493 DEBUG   HandlerThread:62351 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 05:05:25,517 INFO    wandb-upload_0:62351 [upload_job.py:push():133] Uploaded file /tmp/tmptadlpz9dwandb/6gr44ln1-wandb-metadata.json

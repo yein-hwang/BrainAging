@@ -1,0 +1,181 @@
+2023-07-22 04:25:59,569 INFO    StreamThr :19017 [internal.py:wandb_internal():86] W&B internal server running at pid: 19017, started at: 2023-07-22 04:25:59.567854
+2023-07-22 04:25:59,572 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: status
+2023-07-22 04:25:59,574 INFO    WriterThread:19017 [datastore.py:open_for_write():85] open: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/run-ks2hddj8.wandb
+2023-07-22 04:25:59,577 DEBUG   SenderThread:19017 [sender.py:send():369] send: header
+2023-07-22 04:25:59,577 DEBUG   SenderThread:19017 [sender.py:send():369] send: run
+2023-07-22 04:26:00,174 INFO    SenderThread:19017 [dir_watcher.py:__init__():211] watching files in: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files
+2023-07-22 04:26:00,174 INFO    SenderThread:19017 [sender.py:_start_run_threads():1100] run started: ks2hddj8 with start time 1689967559.569233
+2023-07-22 04:26:00,174 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 04:26:00,176 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: check_version
+2023-07-22 04:26:00,216 INFO    SenderThread:19017 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 04:26:00,217 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: check_version
+2023-07-22 04:26:00,329 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: run_start
+2023-07-22 04:26:00,333 DEBUG   HandlerThread:19017 [system_info.py:__init__():31] System info init
+2023-07-22 04:26:00,333 DEBUG   HandlerThread:19017 [system_info.py:__init__():46] System info init done
+2023-07-22 04:26:00,333 INFO    HandlerThread:19017 [system_monitor.py:start():181] Starting system monitor
+2023-07-22 04:26:00,333 INFO    SystemMonitor:19017 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-22 04:26:00,334 INFO    HandlerThread:19017 [system_monitor.py:probe():201] Collecting system info
+2023-07-22 04:26:00,335 INFO    SystemMonitor:19017 [interfaces.py:start():190] Started cpu monitoring
+2023-07-22 04:26:00,336 INFO    SystemMonitor:19017 [interfaces.py:start():190] Started disk monitoring
+2023-07-22 04:26:00,338 INFO    SystemMonitor:19017 [interfaces.py:start():190] Started gpu monitoring
+2023-07-22 04:26:00,339 INFO    SystemMonitor:19017 [interfaces.py:start():190] Started memory monitoring
+2023-07-22 04:26:00,340 INFO    SystemMonitor:19017 [interfaces.py:start():190] Started network monitoring
+2023-07-22 04:26:00,395 DEBUG   HandlerThread:19017 [system_info.py:probe():195] Probing system
+2023-07-22 04:26:00,435 DEBUG   HandlerThread:19017 [system_info.py:_probe_git():180] Probing git
+2023-07-22 04:26:00,449 DEBUG   HandlerThread:19017 [system_info.py:_probe_git():188] Probing git done
+2023-07-22 04:26:00,449 DEBUG   HandlerThread:19017 [system_info.py:probe():240] Probing system done
+2023-07-22 04:26:00,449 DEBUG   HandlerThread:19017 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-72-generic-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-07-21T19:26:00.395644', 'startedAt': '2023-07-21T19:25:59.532821', 'docker': None, 'cuda': None, 'args': ('--batch_size', '32', '--n_workers', '8', '--epochs', '40', '--output', 'model/plateau_', '--ensemble_number', '32', '--lr', '1e-6', '--lr_scheduler_choice', '3'), 'state': 'running', 'program': '/media/leelabsg-storage1/yein/research/BrainAging/0722/main.py', 'codePath': '0722/main.py', 'git': {'remote': None, 'commit': None}, 'email': 'yein.y.hwang@snu.ac.kr', 'root': '/media/leelabsg-storage1/yein/research/BrainAging', 'host': 'a09', 'username': 'yeinhwang', 'executable': '/home/n1/yeinhwang/anaconda3/envs/ba_torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 0.8192031249999991, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 1.788, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.872, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 2.099, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 228.22814559936523, 'used': 22.31839370727539}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}], 'memory': {'total': 502.571475982666}}
+2023-07-22 04:26:00,449 INFO    HandlerThread:19017 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-22 04:26:00,449 INFO    HandlerThread:19017 [system_monitor.py:probe():214] Publishing system info
+2023-07-22 04:26:00,449 DEBUG   HandlerThread:19017 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-22 04:26:00,454 DEBUG   HandlerThread:19017 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-22 04:26:00,455 DEBUG   HandlerThread:19017 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-22 04:26:01,177 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-summary.json
+2023-07-22 04:26:01,177 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/conda-environment.yaml
+2023-07-22 04:26:01,178 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/requirements.txt
+2023-07-22 04:26:07,729 DEBUG   HandlerThread:19017 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-22 04:26:07,735 INFO    HandlerThread:19017 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-22 04:26:07,742 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 04:26:07,742 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-22 04:26:07,743 DEBUG   SenderThread:19017 [sender.py:send():369] send: files
+2023-07-22 04:26:07,743 INFO    SenderThread:19017 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-22 04:26:07,753 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 04:26:07,754 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 04:26:08,019 DEBUG   SenderThread:19017 [sender.py:send():369] send: telemetry
+2023-07-22 04:26:08,022 DEBUG   SenderThread:19017 [sender.py:send():369] send: exit
+2023-07-22 04:26:08,023 INFO    SenderThread:19017 [sender.py:send_exit():574] handling exit code: 1
+2023-07-22 04:26:08,023 INFO    SenderThread:19017 [sender.py:send_exit():576] handling runtime: 7
+2023-07-22 04:26:08,027 INFO    SenderThread:19017 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 04:26:08,028 INFO    SenderThread:19017 [sender.py:send_exit():582] send defer
+2023-07-22 04:26:08,028 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,028 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-22 04:26:08,029 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,029 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-22 04:26:08,029 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 1
+2023-07-22 04:26:08,029 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,029 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-22 04:26:08,029 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,029 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-22 04:26:08,030 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 2
+2023-07-22 04:26:08,030 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,030 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-22 04:26:08,030 INFO    HandlerThread:19017 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-22 04:26:08,030 DEBUG   SystemMonitor:19017 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-22 04:26:08,030 DEBUG   SystemMonitor:19017 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-22 04:26:08,030 DEBUG   SystemMonitor:19017 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-22 04:26:08,035 INFO    HandlerThread:19017 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-22 04:26:08,035 INFO    HandlerThread:19017 [interfaces.py:finish():202] Joined disk monitor
+2023-07-22 04:26:08,187 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-summary.json
+2023-07-22 04:26:08,187 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/conda-environment.yaml
+2023-07-22 04:26:08,187 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/output.log
+2023-07-22 04:26:08,187 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-metadata.json
+2023-07-22 04:26:08,279 INFO    HandlerThread:19017 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-22 04:26:08,279 INFO    HandlerThread:19017 [interfaces.py:finish():202] Joined memory monitor
+2023-07-22 04:26:08,280 INFO    HandlerThread:19017 [interfaces.py:finish():202] Joined network monitor
+2023-07-22 04:26:08,280 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,280 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-22 04:26:08,280 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 3
+2023-07-22 04:26:08,280 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,280 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-22 04:26:08,280 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,280 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-22 04:26:08,280 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 4
+2023-07-22 04:26:08,280 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,280 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-22 04:26:08,280 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,280 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-22 04:26:08,280 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 5
+2023-07-22 04:26:08,280 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,280 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-22 04:26:08,281 DEBUG   SenderThread:19017 [sender.py:send():369] send: summary
+2023-07-22 04:26:08,285 INFO    SenderThread:19017 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 04:26:08,285 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,285 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-22 04:26:08,285 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 6
+2023-07-22 04:26:08,285 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,285 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-22 04:26:08,286 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,286 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-22 04:26:08,292 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 04:26:08,405 INFO    wandb-upload_0:19017 [upload_job.py:push():133] Uploaded file /tmp/tmp_hv2ohp5wandb/jx6a0ljx-wandb-metadata.json
+2023-07-22 04:26:08,603 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 7
+2023-07-22 04:26:08,603 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:08,603 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-22 04:26:08,604 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:08,604 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-22 04:26:08,783 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-22 04:26:09,188 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-summary.json
+2023-07-22 04:26:09,189 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/config.yaml
+2023-07-22 04:26:10,192 INFO    Thread-12 :19017 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/output.log
+2023-07-22 04:26:12,033 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 8
+2023-07-22 04:26:12,034 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: poll_exit
+2023-07-22 04:26:12,034 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:12,034 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-22 04:26:12,035 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:12,035 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-22 04:26:12,035 INFO    SenderThread:19017 [job_builder.py:build():240] Attempting to build job artifact
+2023-07-22 04:26:12,036 INFO    SenderThread:19017 [job_builder.py:build():274] no source found
+2023-07-22 04:26:12,036 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 9
+2023-07-22 04:26:12,036 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:12,036 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-22 04:26:12,037 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:12,037 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-22 04:26:12,037 INFO    SenderThread:19017 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-22 04:26:12,195 INFO    SenderThread:19017 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/output.log
+2023-07-22 04:26:12,196 INFO    SenderThread:19017 [dir_watcher.py:finish():389] scan: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files
+2023-07-22 04:26:12,196 INFO    SenderThread:19017 [dir_watcher.py:finish():403] scan save: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/config.yaml config.yaml
+2023-07-22 04:26:12,197 INFO    SenderThread:19017 [dir_watcher.py:finish():403] scan save: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-summary.json wandb-summary.json
+2023-07-22 04:26:12,204 INFO    SenderThread:19017 [dir_watcher.py:finish():403] scan save: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/requirements.txt requirements.txt
+2023-07-22 04:26:12,208 INFO    SenderThread:19017 [dir_watcher.py:finish():403] scan save: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/conda-environment.yaml conda-environment.yaml
+2023-07-22 04:26:12,212 INFO    SenderThread:19017 [dir_watcher.py:finish():403] scan save: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-metadata.json wandb-metadata.json
+2023-07-22 04:26:12,212 INFO    SenderThread:19017 [dir_watcher.py:finish():403] scan save: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/output.log output.log
+2023-07-22 04:26:12,213 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 10
+2023-07-22 04:26:12,213 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:12,217 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-22 04:26:12,221 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:12,221 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-22 04:26:12,221 INFO    SenderThread:19017 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-22 04:26:12,736 INFO    wandb-upload_0:19017 [upload_job.py:push():133] Uploaded file /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/config.yaml
+2023-07-22 04:26:12,847 INFO    wandb-upload_2:19017 [upload_job.py:push():133] Uploaded file /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/requirements.txt
+2023-07-22 04:26:12,930 INFO    wandb-upload_3:19017 [upload_job.py:push():133] Uploaded file /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/conda-environment.yaml
+2023-07-22 04:26:12,990 INFO    wandb-upload_1:19017 [upload_job.py:push():133] Uploaded file /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/wandb-summary.json
+2023-07-22 04:26:13,552 INFO    wandb-upload_4:19017 [upload_job.py:push():133] Uploaded file /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/files/output.log
+2023-07-22 04:26:13,753 INFO    Thread-11 :19017 [sender.py:transition_state():602] send defer: 11
+2023-07-22 04:26:13,753 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:13,753 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-22 04:26:13,754 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:13,754 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-22 04:26:13,754 INFO    SenderThread:19017 [file_pusher.py:join():164] waiting for file pusher
+2023-07-22 04:26:13,754 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 12
+2023-07-22 04:26:13,754 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:13,754 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-22 04:26:13,755 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:13,755 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-22 04:26:13,785 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-22 04:26:13,998 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 13
+2023-07-22 04:26:13,999 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:13,999 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-22 04:26:13,999 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:13,999 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-22 04:26:14,000 INFO    SenderThread:19017 [sender.py:transition_state():602] send defer: 14
+2023-07-22 04:26:14,000 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: defer
+2023-07-22 04:26:14,001 INFO    HandlerThread:19017 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-22 04:26:14,001 DEBUG   SenderThread:19017 [sender.py:send():369] send: final
+2023-07-22 04:26:14,001 DEBUG   SenderThread:19017 [sender.py:send():369] send: footer
+2023-07-22 04:26:14,001 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: defer
+2023-07-22 04:26:14,002 INFO    SenderThread:19017 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-22 04:26:14,003 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-22 04:26:14,003 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: server_info
+2023-07-22 04:26:14,004 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: poll_exit
+2023-07-22 04:26:14,005 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-22 04:26:14,005 DEBUG   SenderThread:19017 [sender.py:send_request():396] send_request: server_info
+2023-07-22 04:26:14,011 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-22 04:26:14,420 INFO    MainThread:19017 [wandb_run.py:_footer_history_summary_info():3464] rendering history
+2023-07-22 04:26:14,420 INFO    MainThread:19017 [wandb_run.py:_footer_history_summary_info():3496] rendering summary
+2023-07-22 04:26:14,420 INFO    MainThread:19017 [wandb_run.py:_footer_sync_info():3423] logging synced files
+2023-07-22 04:26:14,422 DEBUG   HandlerThread:19017 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-22 04:26:14,422 INFO    HandlerThread:19017 [handler.py:finish():854] shutting down handler
+2023-07-22 04:26:15,005 INFO    WriterThread:19017 [datastore.py:close():298] close: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_042559-ks2hddj8/run-ks2hddj8.wandb
+2023-07-22 04:26:15,420 INFO    SenderThread:19017 [sender.py:finish():1526] shutting down sender
+2023-07-22 04:26:15,420 INFO    SenderThread:19017 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-22 04:26:15,420 INFO    SenderThread:19017 [file_pusher.py:join():164] waiting for file pusher

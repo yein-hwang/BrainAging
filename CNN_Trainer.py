@@ -19,7 +19,8 @@ class CNN_Trainer():
             dataloader_valid, 
             epochs, 
             optimizer,
-            scheduler,):
+            scheduler
+            ):
         super(CNN_Trainer, self).__init__()
 
         self.model = model
@@ -71,8 +72,16 @@ class CNN_Trainer():
                 mae_loss = self.mae_loss_fn(output, target)
                 
                 mse_loss.backward() # loss_fn should be the one used for backpropagation
+                
+                # ----------- learning rate -----------
                 self.optimizer.step()
-                self.scheduler.step()
+                # learning rate update
+                if not isinstance(self.scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
+                    self.scheduler.step()
+
+                    wandb.log({
+                        "Learning rate update": self.scheduler.get_lr()[0]
+                    })
 
                 train_mse_sum += mse_loss.item()*input.size(0)
                 train_mae_sum += mae_loss.item()*input.size(0)
@@ -85,7 +94,6 @@ class CNN_Trainer():
             
             wandb.log({
                 "Epoch": self.epoch+1,
-                "Learning rate": self.optimizer.param_groups[0]['lr'],  # assuming 'scheduler' is a learning rate scheduler object
                 "Train MSE Loss": train_mse_avg,
                 "Train MAE Loss": train_mae_avg
             })
@@ -101,6 +109,8 @@ class CNN_Trainer():
             self.model.eval()
             with torch.no_grad():
                 valid_mse_sum, valid_mae_sum = 0, 0
+                
+                
                 for _, (input, target) in enumerate(tqdm(self.dataloader_valid)):
                     input = input.cuda(non_blocking=True)
                     target = target.reshape(-1, 1)
@@ -121,12 +131,19 @@ class CNN_Trainer():
 
                 valid_mse_list.append(valid_mse_avg)
                 valid_mae_list.append(valid_mae_avg)
-                
-                # self.scheduler.step(valid_mse_avg)
+
+                    
+                # learning rate update
+                if isinstance(self.scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
+                    self.scheduler.step(valid_mse_avg)  # Step the scheduler based on the validation loss
+
+                wandb.log({
+                    "Learning rate": self.optimizer.param_groups[0]['lr']
+                })
+                    
                 print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
                 print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
                 
-                # self.save(self.epoch+1)
 
                 # save model if better validation loss
                 if valid_mse_avg < valid_loss_min:
@@ -134,11 +151,15 @@ class CNN_Trainer():
                     valid_loss_min = valid_mse_avg
                     self.save(self.epoch+1)
                     print(f"    Best Saved model: best-{self.results_folder}-{self.epoch+1}.pth.tar")
+
+
                 wandb.log({
                     "Epoch": self.epoch+1,
                     "Validation MSE Loss": valid_mse_avg,
                     "Validation MAE Loss": valid_mae_avg
                 })
+
+
                 
             self.epoch += 1
             
@@ -173,3 +194,6 @@ class CNN_Trainer():
         # Load saved learning rate (if necessary)
         learning_rate = checkpoint["learning_rate"]
         self.epoch = checkpoint["epoch"] + 1  # Start the next epoch after the checkpoint
+
+
+

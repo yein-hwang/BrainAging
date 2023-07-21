@@ -1,0 +1,20 @@
+Age distribution:  count    25656.000000
+mean        60.416004
+std          7.382716
+min         44.000000
+25%         54.750000
+50%         61.000000
+75%         66.000000
+max         77.000000
+Name: age, dtype: float64
+25656
+images_names:  19242 23086
+labels:  19242 57.0
+images_names:  6414 22671
+labels:  6414 75.0
+/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BrainAging/0718/test.py", line 92, in <module>
+    model = DDP(model, delay_allreduce=True)
+TypeError: __init__() got an unexpected keyword argument 'delay_allreduce'

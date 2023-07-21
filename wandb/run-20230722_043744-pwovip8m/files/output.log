@@ -1,0 +1,15 @@
+Age distribution:  count    25656.000000
+mean        60.416004
+std          7.382716
+min         44.000000
+25%         54.750000
+50%         61.000000
+75%         66.000000
+max         77.000000
+Name: age, dtype: float64
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BrainAging/0722/main.py", line 50, in <module>
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", factor=0.5, patience=config.patience,
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 973, in __init__
+    raise TypeError('{} is not an Optimizer'.format(
+TypeError: module is not an Optimizer

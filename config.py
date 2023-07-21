@@ -22,7 +22,7 @@ class Config:
         self.lr = args.lr # Optimizer
         self.weight_decay = 5e-5
         self.patience = 1
-        # self.tf = 'cutout' 
+        self.lr_scheduler_choice = args.lr_scheduler_choice
         
         self.output = os.path.join(str(args.output) + str(args.ensemble_number))
         
@@ -36,5 +36,7 @@ def parse_args():
     parser.add_argument('--ensemble_number', type=int, default=1)
     parser.add_argument('--output', type=str, default='./model')
     parser.add_argument('--lr', type=float, default=0.0001)
+    parser.add_argument('--lr_scheduler_choice', type=int, default=1,
+                        choices=[1, 2, 3], help='1: CustomCosineAnnealingWarmUpRestarts, 2: Cosine, 3: ReduceLROnPlateau')
 
     return parser.parse_args()

@@ -1,0 +1,82 @@
+2023-07-21 21:34:15,826 INFO    StreamThr :12144 [internal.py:wandb_internal():86] W&B internal server running at pid: 12144, started at: 2023-07-21 21:34:15.811743
+2023-07-21 21:34:15,829 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status
+2023-07-21 21:34:15,831 INFO    WriterThread:12144 [datastore.py:open_for_write():85] open: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/run-s08wttj6.wandb
+2023-07-21 21:34:15,878 DEBUG   SenderThread:12144 [sender.py:send():369] send: header
+2023-07-21 21:34:15,971 DEBUG   SenderThread:12144 [sender.py:send():369] send: run
+2023-07-21 21:34:16,857 INFO    SenderThread:12144 [dir_watcher.py:__init__():211] watching files in: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files
+2023-07-21 21:34:16,857 INFO    SenderThread:12144 [sender.py:_start_run_threads():1100] run started: s08wttj6 with start time 1689942855.824223
+2023-07-21 21:34:16,858 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: summary_record
+2023-07-21 21:34:16,862 INFO    SenderThread:12144 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-21 21:34:16,881 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: check_version
+2023-07-21 21:34:16,882 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: check_version
+2023-07-21 21:34:17,018 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: run_start
+2023-07-21 21:34:17,023 DEBUG   HandlerThread:12144 [system_info.py:__init__():31] System info init
+2023-07-21 21:34:17,023 DEBUG   HandlerThread:12144 [system_info.py:__init__():46] System info init done
+2023-07-21 21:34:17,023 INFO    HandlerThread:12144 [system_monitor.py:start():181] Starting system monitor
+2023-07-21 21:34:17,024 INFO    SystemMonitor:12144 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-21 21:34:17,025 INFO    HandlerThread:12144 [system_monitor.py:probe():201] Collecting system info
+2023-07-21 21:34:17,025 INFO    SystemMonitor:12144 [interfaces.py:start():190] Started cpu monitoring
+2023-07-21 21:34:17,026 INFO    SystemMonitor:12144 [interfaces.py:start():190] Started disk monitoring
+2023-07-21 21:34:17,028 INFO    SystemMonitor:12144 [interfaces.py:start():190] Started gpu monitoring
+2023-07-21 21:34:17,028 INFO    SystemMonitor:12144 [interfaces.py:start():190] Started memory monitoring
+2023-07-21 21:34:17,029 INFO    SystemMonitor:12144 [interfaces.py:start():190] Started network monitoring
+2023-07-21 21:34:17,086 DEBUG   HandlerThread:12144 [system_info.py:probe():195] Probing system
+2023-07-21 21:34:17,113 DEBUG   HandlerThread:12144 [system_info.py:_probe_git():180] Probing git
+2023-07-21 21:34:17,249 DEBUG   HandlerThread:12144 [system_info.py:_probe_git():188] Probing git done
+2023-07-21 21:34:17,249 DEBUG   HandlerThread:12144 [system_info.py:probe():240] Probing system done
+2023-07-21 21:34:17,249 DEBUG   HandlerThread:12144 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-72-generic-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-07-21T12:34:17.086547', 'startedAt': '2023-07-21T12:34:15.631443', 'docker': None, 'cuda': None, 'args': ('--batch_size', '32', '--n_workers', '1', '--epochs', '40', '--output', 'model/cust_test', '--ensemble_number', '32', '--lr', '1e-6'), 'state': 'running', 'program': '/media/leelabsg-storage1/yein/research/BrainAging/0718/main_lr.py', 'codePath': 'main_lr.py', 'git': {'remote': 'https://github.com/yein-hwang/brain_aging.git', 'commit': '5a6165302a00a5019a898f6a126fff7c5bbfd2a5'}, 'email': 'yein.y.hwang@snu.ac.kr', 'root': '/media/leelabsg-storage1/yein/research/BrainAging/0718', 'host': 'a09', 'username': 'yeinhwang', 'executable': '/home/n1/yeinhwang/anaconda3/envs/ba_torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 0.8286249999999993, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 1.842, 'min': 800.0, 'max': 2101.0}, {'current': 0.892, 'min': 800.0, 'max': 2101.0}, {'current': 0.871, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.802, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 2.1, 'min': 800.0, 'max': 2101.0}, {'current': 0.813, 'min': 800.0, 'max': 2101.0}, {'current': 0.89, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 228.22814559936523, 'used': 22.31787109375}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}], 'memory': {'total': 502.571475982666}}
+2023-07-21 21:34:17,249 INFO    HandlerThread:12144 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-21 21:34:17,250 INFO    HandlerThread:12144 [system_monitor.py:probe():214] Publishing system info
+2023-07-21 21:34:17,250 DEBUG   HandlerThread:12144 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-21 21:34:17,255 DEBUG   HandlerThread:12144 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-21 21:34:17,255 DEBUG   HandlerThread:12144 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-21 21:34:17,872 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/conda-environment.yaml
+2023-07-21 21:34:17,872 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/wandb-summary.json
+2023-07-21 21:34:17,873 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/requirements.txt
+2023-07-21 21:34:24,894 DEBUG   HandlerThread:12144 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-21 21:34:24,989 INFO    HandlerThread:12144 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-21 21:34:24,996 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:24,996 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-21 21:34:24,998 DEBUG   SenderThread:12144 [sender.py:send():369] send: files
+2023-07-21 21:34:24,998 INFO    SenderThread:12144 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-21 21:34:25,100 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-21 21:34:25,101 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: stop_status
+2023-07-21 21:34:25,115 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/conda-environment.yaml
+2023-07-21 21:34:25,115 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/wandb-metadata.json
+2023-07-21 21:34:25,428 DEBUG   SenderThread:12144 [sender.py:send():369] send: telemetry
+2023-07-21 21:34:25,885 INFO    wandb-upload_0:12144 [upload_job.py:push():133] Uploaded file /tmp/tmpgb_y5syawandb/u266xk1q-wandb-metadata.json
+2023-07-21 21:34:26,156 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/output.log
+2023-07-21 21:34:26,563 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:28,283 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/output.log
+2023-07-21 21:34:31,564 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:36,565 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:40,101 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-21 21:34:40,102 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: stop_status
+2023-07-21 21:34:42,316 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:44,896 DEBUG   SenderThread:12144 [sender.py:send():369] send: telemetry
+2023-07-21 21:34:46,071 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/output.log
+2023-07-21 21:34:47,343 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/output.log
+2023-07-21 21:34:47,960 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:50,090 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/config.yaml
+2023-07-21 21:34:54,565 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:34:55,102 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-21 21:34:55,103 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: stop_status
+2023-07-21 21:35:00,312 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:05,312 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:10,100 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-21 21:35:10,100 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: stop_status
+2023-07-21 21:35:10,337 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:15,338 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:17,030 DEBUG   SystemMonitor:12144 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-21 21:35:17,327 DEBUG   SenderThread:12144 [sender.py:send():369] send: stats
+2023-07-21 21:35:20,017 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/output.log
+2023-07-21 21:35:20,544 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:25,100 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-21 21:35:25,189 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: stop_status
+2023-07-21 21:35:26,414 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:31,415 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:33,596 INFO    Thread-12 :12144 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_213415-s08wttj6/files/output.log
+2023-07-21 21:35:36,507 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
+2023-07-21 21:35:40,100 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-21 21:35:40,101 DEBUG   SenderThread:12144 [sender.py:send_request():396] send_request: stop_status
+2023-07-21 21:35:42,357 DEBUG   HandlerThread:12144 [handler.py:handle_request():144] handle_request: status_report
