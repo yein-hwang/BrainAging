@@ -1,8 +1,6 @@
 # brain_aging
 Reproducing Brain Aging paper using the Tensorflow and PyTorch libarary.
 
-# 실험 로그
-
 ## 2023년 7월 23일
 -----------------------------
 **실험 내용:**
