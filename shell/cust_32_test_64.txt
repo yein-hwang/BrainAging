@@ -1,12 +1,14 @@
-/var/spool/slurmd/job691395/slurm_script: line 13: /home/username/.bashrc: No such file or directory
+/var/spool/slurmd/job691403/slurm_script: line 12: /home/username/.bashrc: No such file or directory
 CustomCosineAnnealingWarmUpRestarts 적용, batch size: 32, n_workers 64
 wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
-wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.15.5
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_211302-1dubzcmh
+wandb: Tracking run with wandb version 0.15.5
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230721_220507-xb8daayc
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run jumping-meadow-38
+wandb: Syncing run major-durian-45
 wandb: ⭐️ View project at https://wandb.ai/yein-hwang/lr_test
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/lr_test/runs/1dubzcmh
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/lr_test/runs/xb8daayc
+/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 64 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
 Number of gpus:  4
 Age distribution:  count    25656.000000
 mean        60.416004
@@ -172,4 +174,38 @@ Estimated Total Size (MB): 8111.09
 [ Start ]
 
 Epoch   1: training
-  0%|          | 0/602 [00:00<?, ?it/s]
+  0%|          | 0/602 [00:00<?, ?it/s]  0%|          | 0/602 [49:38<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1132, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 38532) is killed by signal: Killed. 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BrainAging/0718/main_lr.py", line 103, in <module>
+    train_mse_list, train_mae_list, valid_mse_list, valid_mae_list = trainer.train() # training!
+  File "/media/leelabsg-storage1/yein/research/BrainAging/0718/CNN_Trainer_lr.py", line 61, in train
+    for batch_ID, (input, target) in enumerate(tqdm(self.dataloader_train)):
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1328, in _next_data
+    idx, data = self._get_data()
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1284, in _get_data
+    success, data = self._try_get_data()
+  File "/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1145, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e
+RuntimeError: DataLoader worker (pid(s) 38532, 38911, 38974, 39606, 41309) exited unexpectedly
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: 🚀 View run major-durian-45 at: https://wandb.ai/yein-hwang/lr_test/runs/xb8daayc
+wandb: Synced 6 W&B file(s), 0 media file(s), 2 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20230721_220507-xb8daayc/logs
+slurmstepd: error: Detected 17 oom-kill event(s) in StepId=691403.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
