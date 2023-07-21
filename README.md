@@ -1,5 +1,5 @@
 # BrainAging
-Reproducing Brain Aging paper using the Tensorflow and PyTorch libarary.
+Reproducing Brain Aging paper using the PyTorch library.
 
 ### Paper
 Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Aging Jangho Kim, Junhyeong Lee, Seunggeun Lee medRxiv 2022.03.04.22271813; doi: https://doi.org/10.1101/2022.03.04.22271813
@@ -13,10 +13,11 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
   - 다양한 배치 사이즈(8, 16, 32)로 실험 진행.
   - 배치 사이즈 8과 16에서는 큰 변화가 없었음.
   - 현재 배치 사이즈 32로 실험 중.
-  - wandb에서 결과 확인 가능: https://wandb.ai/yein-hwang/lr_test?workspace=user-yein-hwang
 - Learning Rate tuning
-  - `lr_scheduler.py` 파일에 구현된 `CustomCosineAnnealingWarmUpStart` 사용 중.
-  - 디폴트로 제공되는 CosineAnealing 실험 기록: https://wandb.ai/yein-hwang/BrainAging_lr_test?workspace=user-yein-hwang
+  - `lr_scheduler.py` 파일에 구현된 `CustomCosineAnnealingWarmUpStart`
+    - log: https://wandb.ai/yein-hwang/lr_test?workspace=user-yein-hwang 
+  - 디폴트로 제공되는 `CosineAnealing`
+    - log: https://wandb.ai/yein-hwang/BrainAging_lr_test?workspace=user-yein-hwang
 - n_workers
   - `Dataloader` 과정에서 효율적인 병렬처리를 위해 설정할 수 있는 num_workers 조건 실험
   - `8`로 진행하는 것이 제일 효율적일 것 같음
