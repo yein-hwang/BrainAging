@@ -14,5 +14,5 @@ source /home/username/.bashrc
 
 echo "CustomCosineAnnealingWarmUpRestarts 적용, batch size: 8"
 
-python main_lr.py --batch_size 8 --epochs 40 --output './cust_' --ensemble_number 8 --lr 1e-6
+python main_lr.py --batch_size 8 --epochs 40 --output '.model/cust_' --ensemble_number 8 --lr 1e-6
 
