@@ -1,0 +1,133 @@
+2023-07-20 21:54:47,913 INFO    StreamThr :28600 [internal.py:wandb_internal():86] W&B internal server running at pid: 28600, started at: 2023-07-20 21:54:47.908055
+2023-07-20 21:54:47,916 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status
+2023-07-20 21:54:47,918 INFO    WriterThread:28600 [datastore.py:open_for_write():85] open: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/run-ybvk2gjw.wandb
+2023-07-20 21:54:47,931 DEBUG   SenderThread:28600 [sender.py:send():369] send: header
+2023-07-20 21:54:48,213 DEBUG   SenderThread:28600 [sender.py:send():369] send: run
+2023-07-20 21:54:49,347 INFO    SenderThread:28600 [dir_watcher.py:__init__():211] watching files in: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files
+2023-07-20 21:54:49,347 INFO    SenderThread:28600 [sender.py:_start_run_threads():1100] run started: ybvk2gjw with start time 1689857687.911069
+2023-07-20 21:54:49,348 DEBUG   SenderThread:28600 [sender.py:send_request():396] send_request: summary_record
+2023-07-20 21:54:49,351 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: check_version
+2023-07-20 21:54:49,413 INFO    SenderThread:28600 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-20 21:54:49,449 DEBUG   SenderThread:28600 [sender.py:send_request():396] send_request: check_version
+2023-07-20 21:54:49,700 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: run_start
+2023-07-20 21:54:49,709 DEBUG   HandlerThread:28600 [system_info.py:__init__():31] System info init
+2023-07-20 21:54:49,709 DEBUG   HandlerThread:28600 [system_info.py:__init__():46] System info init done
+2023-07-20 21:54:49,709 INFO    HandlerThread:28600 [system_monitor.py:start():181] Starting system monitor
+2023-07-20 21:54:49,709 INFO    SystemMonitor:28600 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-20 21:54:49,711 INFO    HandlerThread:28600 [system_monitor.py:probe():201] Collecting system info
+2023-07-20 21:54:49,711 INFO    SystemMonitor:28600 [interfaces.py:start():190] Started cpu monitoring
+2023-07-20 21:54:49,713 INFO    SystemMonitor:28600 [interfaces.py:start():190] Started disk monitoring
+2023-07-20 21:54:49,714 INFO    SystemMonitor:28600 [interfaces.py:start():190] Started gpu monitoring
+2023-07-20 21:54:49,717 INFO    SystemMonitor:28600 [interfaces.py:start():190] Started memory monitoring
+2023-07-20 21:54:49,718 INFO    SystemMonitor:28600 [interfaces.py:start():190] Started network monitoring
+2023-07-20 21:54:49,780 DEBUG   HandlerThread:28600 [system_info.py:probe():195] Probing system
+2023-07-20 21:54:49,842 DEBUG   HandlerThread:28600 [system_info.py:_probe_git():180] Probing git
+2023-07-20 21:54:50,121 DEBUG   HandlerThread:28600 [system_info.py:_probe_git():188] Probing git done
+2023-07-20 21:54:50,121 DEBUG   HandlerThread:28600 [system_info.py:probe():240] Probing system done
+2023-07-20 21:54:50,121 DEBUG   HandlerThread:28600 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-72-generic-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-07-20T12:54:49.780410', 'startedAt': '2023-07-20T12:54:47.308046', 'docker': None, 'cuda': None, 'args': ('--batch_size', '16', '--epochs', '40', '--output', './cos_', '--ensemble_number', '32', '--lr', '1e-6'), 'state': 'running', 'program': '/media/leelabsg-storage1/yein/research/BrainAging/0718/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/yein-hwang/brain_aging.git', 'commit': '333af42edd86cd24e498cc19045567eb901d9fa1'}, 'email': 'yein.y.hwang@snu.ac.kr', 'root': '/media/leelabsg-storage1/yein/research/BrainAging/0718', 'host': 'a07', 'username': 'yeinhwang', 'executable': '/home/n1/yeinhwang/anaconda3/envs/ba_torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 0.8450937499999993, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 0.88, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 1.069, 'min': 800.0, 'max': 2101.0}, {'current': 1.214, 'min': 800.0, 'max': 2101.0}, {'current': 0.881, 'min': 800.0, 'max': 2101.0}, {'current': 1.386, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.9, 'min': 800.0, 'max': 2101.0}, {'current': 1.365, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.909, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.886, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 1.063, 'min': 800.0, 'max': 2101.0}, {'current': 1.198, 'min': 800.0, 'max': 2101.0}, {'current': 0.844, 'min': 800.0, 'max': 2101.0}, {'current': 2.099, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.901, 'min': 800.0, 'max': 2101.0}, {'current': 1.466, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.959, 'min': 800.0, 'max': 2101.0}, {'current': 0.801, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.854, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 228.22814559936523, 'used': 21.38888168334961}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}], 'memory': {'total': 472.0558662414551}}
+2023-07-20 21:54:50,122 INFO    HandlerThread:28600 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-20 21:54:50,122 INFO    HandlerThread:28600 [system_monitor.py:probe():214] Publishing system info
+2023-07-20 21:54:50,122 DEBUG   HandlerThread:28600 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-20 21:54:50,273 DEBUG   HandlerThread:28600 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-20 21:54:50,273 DEBUG   HandlerThread:28600 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-20 21:54:50,379 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/requirements.txt
+2023-07-20 21:54:50,380 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/wandb-summary.json
+2023-07-20 21:54:50,380 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/conda-environment.yaml
+2023-07-20 21:54:58,797 DEBUG   HandlerThread:28600 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-20 21:54:58,859 INFO    HandlerThread:28600 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-20 21:54:58,868 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:54:58,868 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:54:58,868 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:54:58,870 DEBUG   SenderThread:28600 [sender.py:send():369] send: files
+2023-07-20 21:54:58,870 INFO    SenderThread:28600 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-20 21:54:58,984 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 21:54:58,985 DEBUG   SenderThread:28600 [sender.py:send_request():396] send_request: stop_status
+2023-07-20 21:54:59,255 DEBUG   SenderThread:28600 [sender.py:send():369] send: telemetry
+2023-07-20 21:54:59,631 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/conda-environment.yaml
+2023-07-20 21:54:59,632 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/wandb-metadata.json
+2023-07-20 21:54:59,632 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/output.log
+2023-07-20 21:54:59,649 INFO    wandb-upload_0:28600 [upload_job.py:push():133] Uploaded file /tmp/tmpb4v_l_t5wandb/hf2l2eft-wandb-metadata.json
+2023-07-20 21:55:01,817 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/output.log
+2023-07-20 21:55:04,304 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:55:09,305 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:55:13,984 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 21:55:13,985 DEBUG   SenderThread:28600 [sender.py:send_request():396] send_request: stop_status
+2023-07-20 21:55:15,232 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:55:19,162 DEBUG   SenderThread:28600 [sender.py:send():369] send: telemetry
+2023-07-20 21:55:19,554 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/output.log
+2023-07-20 21:55:21,191 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:55:28,985 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 21:55:35,653 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:55:37,315 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/output.log
+2023-07-20 21:55:38,987 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:55:42,988 DEBUG   SenderThread:28600 [sender.py:send_request():396] send_request: stop_status
+2023-07-20 21:55:43,987 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:55:49,719 DEBUG   SystemMonitor:28600 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-20 21:55:51,057 INFO    Thread-12 :28600 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0718/wandb/run-20230720_215447-ybvk2gjw/files/config.yaml
+2023-07-20 21:55:51,058 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:55:51,272 DEBUG   SenderThread:28600 [sender.py:send():369] send: stats
+2023-07-20 21:55:51,272 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:55:53,989 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:55:56,275 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:06,966 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:07,002 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:07,003 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:07,003 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:08,992 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:11,277 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:20,064 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:21,694 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:21,694 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:21,694 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:21,696 DEBUG   SenderThread:28600 [sender.py:send():369] send: stats
+2023-07-20 21:56:23,995 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:26,698 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:34,194 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:34,194 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:34,194 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:36,700 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:38,998 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:48,575 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:49,226 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:49,226 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:49,227 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:51,065 DEBUG   SenderThread:28600 [sender.py:send():369] send: stats
+2023-07-20 21:56:52,068 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:54,001 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:56:57,068 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:56:59,002 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:02,069 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:04,003 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:07,070 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:09,004 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:12,071 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:15,817 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:17,072 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:19,006 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:21,067 DEBUG   SenderThread:28600 [sender.py:send():369] send: stats
+2023-07-20 21:57:24,007 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:31,389 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:31,389 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:34,009 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:34,850 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:39,010 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:43,655 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:44,011 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:44,852 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:49,012 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:49,853 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:57:51,071 DEBUG   SenderThread:28600 [sender.py:send():369] send: stats
+2023-07-20 21:57:54,013 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:59,344 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:57:59,345 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:58:04,015 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:58:11,720 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:58:12,847 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:58:12,848 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:58:14,017 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:58:14,293 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:58:19,018 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:58:25,263 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:58:25,263 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 21:58:25,263 DEBUG   HandlerThread:28600 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 21:58:25,263 DEBUG   SenderThread:28600 [sender.py:send():369] send: stats
