@@ -49,7 +49,9 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
     - epoch 단위: `ReduceLROnPlateau`
   - log: https://wandb.ai/yein-hwang/Brain_Aging
 - `CNN_Trainer` Update
-  - Load 후 loss 그대로 이어서 training 가능하도록 각 loss(train_mse, train_mse, valid_mse, valid_mae) 저장 추가
-  - Epoch 3~ 적용
+  - Epoch 3~ ) Load 후 loss 그대로 이어서 training 가능하도록 각 loss(train_mse, train_mse, valid_mse, valid_mae) 저장 추가
+  - Epoch 6~ ) `CustomCosineAnnealingWarmUpStart` 경우, Load 후 초기 lr 셋팅 값이 너무 낮게 시작되는 문제 해결하기 위해 load 함수 수정
+- `main` Update
+  - lr scheduler 별 setting 재수정
 - 추가 참고 사항
   - 쉘 스크립트에서 `--ensemble_num` 옵션은 현재 모델 저장 폴더의 배치 사이즈를 구분하기 위해 사용 중.
