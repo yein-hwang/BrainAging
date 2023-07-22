@@ -1,11 +1,11 @@
 CosineLR 적용, batch size: 32, n_workers: 8 -- loss save & load 추가
 wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.15.5
-wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_193419-aq1bmbgr
+wandb: Run data is saved locally in /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_195134-ytkjbmzu
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run vibrant-river-37
+wandb: Syncing run fanciful-monkey-38
 wandb: ⭐️ View project at https://wandb.ai/yein-hwang/Brain_Aging
-wandb: 🚀 View run at https://wandb.ai/yein-hwang/Brain_Aging/runs/aq1bmbgr
+wandb: 🚀 View run at https://wandb.ai/yein-hwang/Brain_Aging/runs/ytkjbmzu
 /home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/utils/data/dataloader.py:560: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
   warnings.warn(_create_warning_msg(
 Number of gpus:  4
@@ -175,4 +175,4 @@ Estimated Total Size (MB): 8111.09
 Epoch   1: training
   0%|          | 0/602 [00:00<?, ?it/s]/home/n1/yeinhwang/anaconda3/envs/ba_torch/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:814: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
   warnings.warn("To get the last learning rate computed by the scheduler, "
-  0%|          | 1/602 [02:07<21:17:37, 127.55s/it]  0%|          | 2/602 [02:08<8:50:22, 53.04s/it]    0%|          | 3/602 [02:09<4:51:42, 29.22s/it]  1%|          | 4/602 [02:10<2:59:41, 18.03s/it]  1%|          | 5/602 [02:11<1:57:49, 11.84s/it]  1%|          | 6/602 [02:11<1:20:36,  8.11s/it]  1%|          | 7/602 [02:12<57:00,  5.75s/it]    1%|▏         | 8/602 [02:13<41:32,  4.20s/it]  1%|▏         | 9/602 [03:26<4:14:51, 25.79s/it]  2%|▏         | 10/602 [03:50<4:07:28, 25.08s/it]  2%|▏         | 11/602 [03:52<2:56:37, 17.93s/it]  2%|▏         | 12/602 [03:53<2:05:18, 12.74s/it]  2%|▏         | 13/602 [03:53<1:29:48,  9.15s/it]  2%|▏         | 14/602 [03:54<1:05:09,  6.65s/it]  2%|▏         | 15/602 [03:55<48:02,  4.91s/it]    3%|▎         | 16/602 [03:56<36:06,  3.70s/it]  3%|▎         | 17/602 [05:15<4:17:22, 26.40s/it]  3%|▎         | 18/602 [05:38<4:06:04, 25.28s/it]  3%|▎         | 19/602 [05:39<2:55:31, 18.06s/it]  3%|▎         | 20/602 [05:40<2:05:09, 12.90s/it]  3%|▎         | 21/602 [05:42<1:33:16,  9.63s/it]  4%|▎         | 22/602 [05:43<1:07:42,  7.00s/it]  4%|▍         | 23/602 [05:44<49:50,  5.17s/it]    4%|▍         | 24/602 [05:45<37:21,  3.88s/it]  4%|▍         | 25/602 [07:05<4:17:37, 26.79s/it]  4%|▍         | 26/602 [07:30<4:11:32, 26.20s/it]  4%|▍         | 27/602 [07:31<3:00:25, 18.83s/it]  5%|▍         | 28/602 [07:32<2:08:34, 13.44s/it]  5%|▍         | 29/602 [07:33<1:32:21,  9.67s/it]  5%|▍         | 30/602 [07:34<1:07:02,  7.03s/it]  5%|▌         | 31/602 [07:35<49:20,  5.18s/it]    5%|▌         | 32/602 [07:36<36:59,  3.89s/it]
+  0%|          | 1/602 [02:05<21:02:04, 126.00s/it]  0%|          | 2/602 [02:06<8:43:56, 52.39s/it]    0%|          | 3/602 [02:07<4:48:13, 28.87s/it]  1%|          | 4/602 [02:08<2:57:35, 17.82s/it]  1%|          | 5/602 [02:09<1:56:29, 11.71s/it]  1%|          | 6/602 [02:10<1:19:42,  8.02s/it]  1%|          | 7/602 [02:11<56:24,  5.69s/it]    1%|▏         | 8/602 [02:12<41:08,  4.16s/it]
