@@ -82,7 +82,7 @@ if config.lr_scheduler_choice == 1:
         # gamma: 주기가 반복될수록 eta_max 곱해지는 스케일값 
     scheduler = lr.CustomCosineAnnealingWarmUpRestarts(optimizer,T_0=100, T_up=10, T_mult=2, eta_max=1e-3, gamma=0.5)
 elif config.lr_scheduler_choice == 2:
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=5, eta_min=1e-6)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200, eta_min=0)
 elif config.lr_scheduler_choice == 3:
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", factor=0.5, patience=config.patience,
                                                             verbose=1, eps=1e-04, cooldown=1, min_lr=1e-6)

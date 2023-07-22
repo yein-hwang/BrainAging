@@ -1,0 +1,305 @@
+2023-07-22 19:27:46,415 INFO    StreamThr :43402 [internal.py:wandb_internal():86] W&B internal server running at pid: 43402, started at: 2023-07-22 19:27:46.413406
+2023-07-22 19:27:46,418 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status
+2023-07-22 19:27:46,421 INFO    WriterThread:43402 [datastore.py:open_for_write():85] open: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/run-xyjvxgxn.wandb
+2023-07-22 19:27:46,438 DEBUG   SenderThread:43402 [sender.py:send():369] send: header
+2023-07-22 19:27:46,469 DEBUG   SenderThread:43402 [sender.py:send():369] send: run
+2023-07-22 19:27:47,143 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: check_version
+2023-07-22 19:27:47,155 INFO    SenderThread:43402 [dir_watcher.py:__init__():211] watching files in: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files
+2023-07-22 19:27:47,155 INFO    SenderThread:43402 [sender.py:_start_run_threads():1100] run started: xyjvxgxn with start time 1690021666.414131
+2023-07-22 19:27:47,155 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:27:47,168 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:27:47,170 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: check_version
+2023-07-22 19:27:47,355 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: run_start
+2023-07-22 19:27:47,359 DEBUG   HandlerThread:43402 [system_info.py:__init__():31] System info init
+2023-07-22 19:27:47,359 DEBUG   HandlerThread:43402 [system_info.py:__init__():46] System info init done
+2023-07-22 19:27:47,359 INFO    HandlerThread:43402 [system_monitor.py:start():181] Starting system monitor
+2023-07-22 19:27:47,360 INFO    SystemMonitor:43402 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-22 19:27:47,360 INFO    HandlerThread:43402 [system_monitor.py:probe():201] Collecting system info
+2023-07-22 19:27:47,360 INFO    SystemMonitor:43402 [interfaces.py:start():190] Started cpu monitoring
+2023-07-22 19:27:47,362 INFO    SystemMonitor:43402 [interfaces.py:start():190] Started disk monitoring
+2023-07-22 19:27:47,364 INFO    SystemMonitor:43402 [interfaces.py:start():190] Started gpu monitoring
+2023-07-22 19:27:47,366 INFO    SystemMonitor:43402 [interfaces.py:start():190] Started memory monitoring
+2023-07-22 19:27:47,366 INFO    SystemMonitor:43402 [interfaces.py:start():190] Started network monitoring
+2023-07-22 19:27:47,422 DEBUG   HandlerThread:43402 [system_info.py:probe():195] Probing system
+2023-07-22 19:27:47,432 DEBUG   HandlerThread:43402 [system_info.py:_probe_git():180] Probing git
+2023-07-22 19:27:47,468 DEBUG   HandlerThread:43402 [system_info.py:_probe_git():188] Probing git done
+2023-07-22 19:27:47,468 DEBUG   HandlerThread:43402 [system_info.py:probe():240] Probing system done
+2023-07-22 19:27:47,468 DEBUG   HandlerThread:43402 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-72-generic-x86_64-with-glibc2.27', 'python': '3.9.16', 'heartbeatAt': '2023-07-22T10:27:47.422737', 'startedAt': '2023-07-22T10:27:46.217177', 'docker': None, 'cuda': None, 'args': ('--batch_size', '32', '--n_workers', '8', '--epochs', '40', '--output', 'model/cos_', '--ensemble_number', '32', '--lr', '1e-4', '--lr_scheduler_choice', '2'), 'state': 'running', 'program': '/media/leelabsg-storage1/yein/research/BrainAging/0722/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/yein-hwang/brain_aging', 'commit': '2b96397631d2c5b15b928a0385f8f2043bb0a2f8'}, 'email': 'yein.y.hwang@snu.ac.kr', 'root': '/media/leelabsg-storage1/yein/research/BrainAging/0722', 'host': 'a09', 'username': 'yeinhwang', 'executable': '/home/n1/yeinhwang/anaconda3/envs/ba_torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 0.8228749999999992, 'min': 800.0, 'max': 2101.0}, 'cpu_freq_per_core': [{'current': 1.933, 'min': 800.0, 'max': 2101.0}, {'current': 0.899, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.817, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 1.601, 'min': 800.0, 'max': 2101.0}, {'current': 0.895, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.881, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.799, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}, {'current': 0.8, 'min': 800.0, 'max': 2101.0}], 'disk': {'total': 228.22814559936523, 'used': 22.32644271850586}, 'gpu': 'NVIDIA TITAN RTX', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}, {'name': 'NVIDIA TITAN RTX', 'memory_total': 25396838400}], 'memory': {'total': 502.571475982666}}
+2023-07-22 19:27:47,469 INFO    HandlerThread:43402 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-22 19:27:47,469 INFO    HandlerThread:43402 [system_monitor.py:probe():214] Publishing system info
+2023-07-22 19:27:47,469 DEBUG   HandlerThread:43402 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-22 19:27:47,487 DEBUG   HandlerThread:43402 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-22 19:27:47,487 DEBUG   HandlerThread:43402 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-22 19:27:48,160 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:27:48,161 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/requirements.txt
+2023-07-22 19:27:48,161 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/conda-environment.yaml
+2023-07-22 19:27:55,154 DEBUG   HandlerThread:43402 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-22 19:27:55,187 INFO    HandlerThread:43402 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-22 19:27:55,194 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:27:55,194 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-22 19:27:55,195 DEBUG   SenderThread:43402 [sender.py:send():369] send: files
+2023-07-22 19:27:55,195 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-22 19:27:55,216 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:27:55,216 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:27:55,315 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/conda-environment.yaml
+2023-07-22 19:27:55,315 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-metadata.json
+2023-07-22 19:27:55,483 DEBUG   SenderThread:43402 [sender.py:send():369] send: telemetry
+2023-07-22 19:27:55,864 INFO    wandb-upload_0:43402 [upload_job.py:push():133] Uploaded file /tmp/tmpv83_6tajwandb/i45qle8i-wandb-metadata.json
+2023-07-22 19:27:56,332 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_created():272] file/dir created: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:27:57,589 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:27:58,416 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:28:02,589 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:07,589 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:10,216 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:28:10,217 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:28:13,433 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:15,041 DEBUG   SenderThread:43402 [sender.py:send():369] send: telemetry
+2023-07-22 19:28:15,750 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:28:19,148 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:24,838 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/config.yaml
+2023-07-22 19:28:25,216 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:28:25,217 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:28:27,442 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:32,443 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:37,443 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:40,216 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:28:40,216 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:28:43,427 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:47,367 DEBUG   SystemMonitor:43402 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-22 19:28:47,887 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:28:48,889 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:53,890 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:28:55,216 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:28:55,217 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:28:59,531 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:04,532 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:09,533 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:10,217 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:29:10,217 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:29:15,418 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:17,888 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:29:20,889 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:25,217 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:29:27,462 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:27,463 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:29:31,675 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:36,676 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:40,217 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:29:40,993 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:29:42,199 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:47,200 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:47,889 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:29:52,890 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:29:55,217 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:29:55,217 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:29:58,412 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:03,413 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:08,414 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:10,217 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:30:10,335 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:30:13,552 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:17,891 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:30:18,992 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:21,433 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:21,435 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:21,435 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:21,917 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:22,780 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:23,406 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:23,655 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:23,780 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:23,781 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:23,781 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:30:24,459 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:24,533 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:24,792 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:24,793 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:24,793 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:25,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:30:25,406 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:26,117 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:26,289 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:26,313 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:30:26,334 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:26,334 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:26,652 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:30:27,103 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:27,163 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:30:27,566 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:27,567 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:28,642 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:30:28,642 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:30:28,887 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:28,965 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:30:29,166 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:29,363 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:31,285 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:30:31,286 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:30:31,286 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:31,321 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:31,321 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:31,322 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:32,964 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:33,348 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:30:33,348 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:30:33,736 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:30:33,736 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:30:34,253 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:30:35,606 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:30:35,606 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:30:37,255 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:38,166 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:30:40,363 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:30:40,752 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:30:43,009 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:47,892 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:30:48,893 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:53,894 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:30:55,363 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:30:55,364 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:30:59,568 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:04,569 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:09,569 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:10,363 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:31:10,364 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:31:15,565 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:17,896 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:31:20,898 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:25,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:31:25,364 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:31:26,565 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:29,306 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:29,493 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:29,493 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:29,749 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:30,759 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:31,166 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:31:31,327 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:31,327 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:31,623 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:32,020 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:32,495 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:32,499 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:32,499 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:32,505 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:33,373 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:33,668 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:31:33,674 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:31:33,674 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:33,678 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:33,678 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:34,250 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:34,269 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:34,424 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:34,430 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:35,126 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:36,014 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:31:36,471 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:36,505 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:31:36,608 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:36,608 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:36,961 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:31:37,980 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:38,265 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:38,265 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:38,266 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:38,800 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:31:38,800 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:31:38,907 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:39,210 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:31:39,210 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:31:40,363 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:31:41,115 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:31:41,116 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:31:41,258 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:31:41,259 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:31:43,320 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:43,576 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:31:48,135 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:31:49,136 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:54,137 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:31:55,363 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:31:55,532 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:31:59,730 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:04,731 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:09,733 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:10,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:32:10,364 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:32:15,566 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:17,902 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:32:20,903 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:25,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:32:25,364 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:32:26,570 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:31,571 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:36,572 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:40,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:32:40,661 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:32:41,867 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:46,867 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:47,903 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:32:51,904 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:32:55,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:32:55,365 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:32:57,560 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:02,444 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:03,227 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:03,228 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:03,228 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:03,785 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:05,027 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:05,027 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:05,028 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:05,028 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:05,695 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:06,747 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:07,120 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:07,121 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:08,203 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:08,246 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:08,550 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:09,155 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:09,302 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:09,302 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:09,304 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:09,971 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:09,971 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:09,972 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:10,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:33:10,601 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:11,476 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:11,817 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:11,818 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:11,818 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:12,350 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-22 19:33:12,352 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:12,352 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:13,945 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:14,986 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:33:14,990 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:15,195 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:15,195 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:15,314 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:15,314 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:16,990 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:18,657 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:18,761 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:19,322 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:19,322 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:21,941 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:21,942 DEBUG   SenderThread:43402 [sender.py:send():369] send: history
+2023-07-22 19:33:21,942 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:21,943 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: summary_record
+2023-07-22 19:33:22,343 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:22,343 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:23,260 INFO    SenderThread:43402 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-22 19:33:23,261 DEBUG   SenderThread:43402 [sender.py:send():369] send: stats
+2023-07-22 19:33:25,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:33:25,365 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status
+2023-07-22 19:33:25,594 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/output.log
+2023-07-22 19:33:25,594 INFO    Thread-12 :43402 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230722_192746-xyjvxgxn/files/wandb-summary.json
+2023-07-22 19:33:27,564 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:32,565 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:37,565 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: status_report
+2023-07-22 19:33:40,364 DEBUG   HandlerThread:43402 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-22 19:33:40,365 DEBUG   SenderThread:43402 [sender.py:send_request():396] send_request: stop_status

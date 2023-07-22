@@ -195,14 +195,25 @@ class CNN_Trainer():
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])
         self.scheduler.load_state_dict(checkpoint["scheduler"])
-        # Load saved learning rate 
-        learning_rate = checkpoint["learning_rate"]
+        
+        # Check the current learning rate and reset if necessary
+        if self.scheduler.get_lr()[0] < 1e-7:
+            # Change this to your initial learning rate
+            initial_learning_rate = 0.001  
+            
+            for param_group in self.optimizer.param_groups:
+                param_group['lr'] = initial_learning_rate
+            
+            # Reset the scheduler with the new learning rate
+            # Make sure you replace this with your scheduler's initialization code
+            self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimizer, step_size=10, gamma=0.1)
+        
         self.epoch = checkpoint["epoch"] + 1  # Start the next epoch after the checkpoint
-        # Load saved loss lists
         self.train_mse_list = checkpoint.get("train_mse_list", [])
         self.train_mae_list = checkpoint.get("train_mae_list", [])
         self.valid_mse_list = checkpoint.get("valid_mse_list", [])
         self.valid_mae_list = checkpoint.get("valid_mae_list", [])
+
 
 
 
