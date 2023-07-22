@@ -182,18 +182,27 @@ class CNN_Trainer():
                     "state_dict": self.model.state_dict(), 
                     "optimizer" : self.optimizer.state_dict(),
                     "scheduler" : self.scheduler.state_dict(),
-                    "learning_rate" : self.optimizer.param_groups[0]['lr']},  # Save current learning rate
+                    "learning_rate" : self.optimizer.param_groups[0]['lr'],
+                    "train_mse_list": self.train_mse_list,
+                    "train_mae_list": self.train_mae_list,
+                    "valid_mse_list": self.valid_mse_list,
+                    "valid_mae_list": self.valid_mae_list},  
                     f"{self.results_folder}/3d_cnn-{milestone}.pth.tar")
-
         
     def load(self, milestone):
         checkpoint = torch.load(f"{self.results_folder}/3d_cnn-{milestone}.pth.tar")
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])
         self.scheduler.load_state_dict(checkpoint["scheduler"])
-        # Load saved learning rate (if necessary)
+        # Load saved learning rate 
         learning_rate = checkpoint["learning_rate"]
         self.epoch = checkpoint["epoch"] + 1  # Start the next epoch after the checkpoint
+        # Load saved loss lists
+        self.train_mse_list = checkpoint.get("train_mse_list", [])
+        self.train_mae_list = checkpoint.get("train_mae_list", [])
+        self.valid_mse_list = checkpoint.get("valid_mse_list", [])
+        self.valid_mae_list = checkpoint.get("valid_mae_list", [])
+
 
 
 
