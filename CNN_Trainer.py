@@ -156,7 +156,8 @@ class CNN_Trainer():
                 wandb.log({
                     "Epoch": self.epoch+1,
                     "Validation MSE Loss": valid_mse_avg,
-                    "Validation MAE Loss": valid_mae_avg
+                    "Validation MAE Loss": valid_mae_avg,
+                    "Learning rate": self.optimizer.param_groups[0]['lr']
                 })
 
 
