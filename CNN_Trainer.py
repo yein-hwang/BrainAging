@@ -197,7 +197,7 @@ class CNN_Trainer():
         self.scheduler.load_state_dict(checkpoint["scheduler"])
         
         # Check the current learning rate and reset if necessary
-        if self.scheduler.get_lr()[0] < 1e-7:
+        if self.scheduler.get_lr()[0] < 1e-6:
             # Change this to your initial learning rate
             initial_learning_rate = 0.001  
             
