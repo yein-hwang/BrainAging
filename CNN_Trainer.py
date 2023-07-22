@@ -36,6 +36,9 @@ class CNN_Trainer():
         self.results_folder = Path(results_folder)
         self.results_folder.mkdir(exist_ok=True)
         
+        self.train_mse_list, self.train_mae_list = [], []
+        self.valid_mse_list, self.valid_mae_list = [], []
+        
         wandb.watch(self.model, log="all")
 
     def train(self):
@@ -52,8 +55,6 @@ class CNN_Trainer():
         
         self.model.train()
         valid_loss_min = 10000
-        train_mse_list, train_mae_list = [], []
-        valid_mse_list, valid_mae_list = [], []
         
         while self.epoch < self.epochs:
             print(f"\nEpoch {self.epoch+1:3d}: training")
@@ -89,8 +90,8 @@ class CNN_Trainer():
             train_mse_avg = train_mse_sum / len(self.dataloader_train.dataset)
             train_mae_avg = train_mae_sum / len(self.dataloader_train.dataset)
 
-            train_mse_list.append(train_mse_avg)
-            train_mae_list.append(train_mae_avg)
+            self.train_mse_list.append(train_mse_avg)
+            self.train_mae_list.append(train_mae_avg)
             
             wandb.log({
                 "Epoch": self.epoch+1,
@@ -129,8 +130,8 @@ class CNN_Trainer():
                 valid_mse_avg = valid_mse_sum / len(self.dataloader_valid.dataset)
                 valid_mae_avg = valid_mae_sum / len(self.dataloader_valid.dataset)
 
-                valid_mse_list.append(valid_mse_avg)
-                valid_mae_list.append(valid_mae_avg)
+                self.valid_mse_list.append(valid_mse_avg)
+                self.valid_mae_list.append(valid_mae_avg)
 
                     
                 # learning rate update
@@ -170,11 +171,6 @@ class CNN_Trainer():
             print(f"Epoch: {self.epoch+1}, duration for validation: {duration:.2f} minutes")
             
         print("[ End of Epoch ]")
-
-        self.train_mse_list = train_mse_list
-        self.train_mae_list = train_mae_list
-        self.valid_mse_list = valid_mse_list
-        self.valid_mae_list = valid_mae_list
         
         return self.train_mse_list, self.train_mae_list, self.valid_mse_list, self.valid_mae_list
     

@@ -25,3 +25,4 @@ config: {}
 2023-07-22 19:51:43,903 INFO    MainThread:45422 [wandb_run.py:_redirect():2097] Redirects installed.
 2023-07-22 19:51:43,905 INFO    MainThread:45422 [wandb_init.py:init():830] run started, returning control to user process
 2023-07-22 19:52:03,890 INFO    MainThread:45422 [wandb_watch.py:watch():51] Watching
+2023-07-22 22:57:06,509 WARNING MsgRouterThr:45422 [router.py:message_loop():77] message_loop has been closed

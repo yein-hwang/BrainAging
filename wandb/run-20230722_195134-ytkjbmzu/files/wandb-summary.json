@@ -1,1 +1,1 @@
-{"Learning rate update": 0.0008127437917546979, "_timestamp": 1690029499.594166, "_runtime": 6404.983067035675, "_step": 455}
+{"Learning rate update": 9.868183941134965e-07, "_timestamp": 1690034216.052523, "_runtime": 11121.441423892975, "_step": 603, "Epoch": 1, "Train MSE Loss": 80.41404366242936, "Train MAE Loss": 6.1185566237829985, "Learning rate": 2.467198171342e-07, "_wandb": {"runtime": 11120}}
