@@ -5,6 +5,7 @@ from pathlib import Path
 
 import torch
 from torch import nn
+from learning_rate import lr_scheduler as lr
 
 import time
 
@@ -193,16 +194,13 @@ class CNN_Trainer():
         self.scheduler.load_state_dict(checkpoint["scheduler"])
         
         # Check the current learning rate and reset if necessary
-        if self.optimizer.param_groups[0]['lr'] < 1e-5:
-            # Change this to your initial learning rate
-            initial_learning_rate = 0.001  
-            
+        learning_rate = checkpoint["learning_rate"]
+        if isinstance(self.scheduler, lr.CustomCosineAnnealingWarmUpRestarts) and learning_rate < 1e-5:
+            learning_rate = 0  # Replace with your initial learning rate
             for param_group in self.optimizer.param_groups:
-                param_group['lr'] = initial_learning_rate
-            
+                param_group['lr'] = learning_rate
             # Reset the scheduler with the new learning rate
-            # Make sure you replace this with your scheduler's initialization code
-            self.scheduler = torch.optim.lr_scheduler.StepLR(self.optimizer, step_size=10, gamma=0.1)
+            self.scheduler = lr.CustomCosineAnnealingWarmUpRestarts(self.optimizer, T_0=100, T_up=10, T_mult=2, eta_max=1e-3, gamma=0.5)
         
         self.epoch = checkpoint["epoch"] + 1  # Start the next epoch after the checkpoint
         self.train_mse_list = checkpoint.get("train_mse_list", [])
