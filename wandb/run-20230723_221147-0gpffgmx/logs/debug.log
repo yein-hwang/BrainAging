@@ -1,0 +1,27 @@
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Configure stats pid to 6521
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Loading settings from /home/n1/yeinhwang/.config/wandb/settings
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Loading settings from /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/settings
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': '/media/leelabsg-storage1/yein/research/BrainAging/0722/main.py'}
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_init.py:_log_setup():507] Logging user logs to /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230723_221147-0gpffgmx/logs/debug.log
+2023-07-23 22:11:47,330 INFO    MainThread:6521 [wandb_init.py:_log_setup():508] Logging internal logs to /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230723_221147-0gpffgmx/logs/debug-internal.log
+2023-07-23 22:11:47,331 INFO    MainThread:6521 [wandb_init.py:init():547] calling init triggers
+2023-07-23 22:11:47,331 INFO    MainThread:6521 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-07-23 22:11:47,331 INFO    MainThread:6521 [wandb_init.py:init():596] starting backend
+2023-07-23 22:11:47,331 INFO    MainThread:6521 [wandb_init.py:init():600] setting up manager
+2023-07-23 22:11:47,336 INFO    MainThread:6521 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-23 22:11:47,359 INFO    MainThread:6521 [wandb_init.py:init():606] backend started and connected
+2023-07-23 22:11:47,381 INFO    MainThread:6521 [wandb_init.py:init():705] updated telemetry
+2023-07-23 22:11:47,487 INFO    MainThread:6521 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-07-23 22:11:48,351 INFO    MainThread:6521 [wandb_run.py:_on_init():2173] communicating current version
+2023-07-23 22:11:48,544 INFO    MainThread:6521 [wandb_run.py:_on_init():2182] got version response 
+2023-07-23 22:11:48,544 INFO    MainThread:6521 [wandb_init.py:init():789] starting run threads in backend
+2023-07-23 22:12:10,587 INFO    MainThread:6521 [wandb_run.py:_console_start():2152] atexit reg
+2023-07-23 22:12:10,587 INFO    MainThread:6521 [wandb_run.py:_redirect():2007] redirect: SettingsConsole.WRAP_RAW
+2023-07-23 22:12:10,588 INFO    MainThread:6521 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2023-07-23 22:12:10,588 INFO    MainThread:6521 [wandb_run.py:_redirect():2097] Redirects installed.
+2023-07-23 22:12:10,589 INFO    MainThread:6521 [wandb_init.py:init():830] run started, returning control to user process
+2023-07-23 22:12:57,289 INFO    MainThread:6521 [wandb_watch.py:watch():51] Watching

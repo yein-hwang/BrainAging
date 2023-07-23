@@ -195,8 +195,9 @@ class CNN_Trainer():
         
         # Check the current learning rate and reset if necessary
         learning_rate = checkpoint["learning_rate"]
+        print("Learning rate loading: ", learning_rate, flush=True)
         if isinstance(self.scheduler, lr.CustomCosineAnnealingWarmUpRestarts) and learning_rate < 1e-5:
-            learning_rate = 0  # Replace with your initial learning rate
+            learning_rate = 1e-6  # Replace with your initial learning rate
             for param_group in self.optimizer.param_groups:
                 param_group['lr'] = learning_rate
             # Reset the scheduler with the new learning rate
