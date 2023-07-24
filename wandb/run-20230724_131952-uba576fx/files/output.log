@@ -738,3 +738,13 @@ Loaded model: model/cos_32/3d_cnn-7.pth.tar
 
 
 
+
+
+
+
+
+100%|█████████▉| 601/602 [2:22:49<00:06,  6.76s/it]
+Epoch: 8, duration for training: 142.89 minutes
+100%|██████████| 602/602 [2:22:52<00:00, 14.24s/it]
+
+
