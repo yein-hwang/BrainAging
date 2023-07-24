@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
 #SBATCH --partition=3090
-#SBATCH --time=0-12:00:00
+#SBATCH --time=0-9:40:00
 #SBATCH --nodelist=b04
 #SBATCH --mem=24000MB
 #SBATCH -o ./shell/cust_7.txt

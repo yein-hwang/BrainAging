@@ -86,7 +86,7 @@ class CNN_Trainer():
                     self.scheduler.step()
 
                     wandb.log({
-                        "Learning rate update": self.scheduler.self.optimizer.param_groups[0]['lr']
+                        "Learning rate update": self.optimizer.param_groups[0]['lr']
                     })
 
                 train_mse_sum += mse_loss.item()*input.size(0)

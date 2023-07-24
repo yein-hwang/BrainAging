@@ -1,0 +1,2 @@
+CustomCosineAnnealingWarmUpRestarts 적용, batch size: 32, n_workers: 8 -- loss save & load 추가
+wandb: Currently logged in as: yein-hwang. Use `wandb login --relogin` to force relogin

@@ -1,1 +1,1 @@
-{}
+{"Epoch": 14, "Train MSE Loss": 156.85351637596526, "Train MAE Loss": 10.51894227031759, "_timestamp": 1690184409.1713705, "_runtime": 12007.860080480576, "_step": 2, "Learning rate": 1e-06, "Validation MSE Loss": 41.01338118008078, "Validation MAE Loss": 5.366178489229483}
