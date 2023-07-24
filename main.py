@@ -34,7 +34,7 @@ RESULTS_FOLDER = config.output
 INPUT_SIZE = config.input_size
 LEARNING_RATE = config.lr
 OUTPUT = config.output
-N_WOKERS = config.num_cpu_workers
+N_WORKERS = config.num_cpu_workers
 
 # obtain the indices for our dataset
 indices = list(range(len(dataset_pd)))
@@ -52,13 +52,13 @@ dataloader_train = DataLoader(train_dataset,
                               sampler=RandomSampler(train_dataset),
                               collate_fn=train_dataset.collate_fn,
                               pin_memory=True,
-                              num_workers=N_WOKERS)
+                              num_workers=N_WORKERS)
 dataloader_valid = DataLoader(valid_dataset, 
                               batch_size=BATCH_SIZE, 
                               sampler=SequentialSampler(valid_dataset),
                               collate_fn=valid_dataset.collate_fn,
                               pin_memory=True,
-                              num_workers=N_WOKERS)
+                              num_workers=N_WORKERS)
 
 # Define model and optimizer
 model = CNN(in_channels=1).cuda()

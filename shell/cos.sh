@@ -7,7 +7,7 @@
 #SBATCH --time=0-12:00:00
 #SBATCH --nodelist=a09
 #SBATCH --mem=24000MB
-#SBATCH -o ./shell/cos_4.txt
+#SBATCH -o ./shell/cos_5.txt
 
 
 echo "CosineLR 적용, batch size: 32, n_workers: 8 -- loss save & load 추가"

@@ -50,12 +50,16 @@ class CNN_Trainer():
         latest_model_path = sorted(self.results_folder.glob('3d_cnn-*.pth.tar'), key=lambda x: int(x.stem.split('-')[1].split('.')[0]))
         if latest_model_path:
             self.load(int(latest_model_path[-1].stem.split('-')[1].split('.')[0]))
+            
+            if self.valid_mae_list:
+                valid_loss_min = self.valid_mae_list[-1]
+            else:
+                valid_loss_min = 10000
             print(f"Loaded model: {latest_model_path[-1]}")
 
 
         
         self.model.train()
-        valid_loss_min = 10000
         
         while self.epoch < self.epochs:
             print(f"\nEpoch {self.epoch+1:3d}: training")
@@ -82,7 +86,7 @@ class CNN_Trainer():
                     self.scheduler.step()
 
                     wandb.log({
-                        "Learning rate update": self.scheduler.get_lr()[0]
+                        "Learning rate update": self.scheduler.self.optimizer.param_groups[0]['lr']
                     })
 
                 train_mse_sum += mse_loss.item()*input.size(0)
