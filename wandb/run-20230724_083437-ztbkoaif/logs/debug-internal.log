@@ -21741,3 +21741,62 @@
 2023-07-24 15:45:28,731 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
 2023-07-24 15:45:30,071 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
 2023-07-24 15:45:33,732 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:45:35,072 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:45:38,733 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:45:40,072 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:45:41,072 DEBUG   SenderThread:13853 [sender.py:send():369] send: stats
+2023-07-24 15:45:43,734 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:45:45,074 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:45:48,734 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:45:50,075 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:45:53,735 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:45:55,075 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:45:58,736 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:00,076 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:03,737 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:03,789 INFO    Thread-12 :13853 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230724_083437-ztbkoaif/files/output.log
+2023-07-24 15:46:05,720 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:08,737 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:11,073 DEBUG   SenderThread:13853 [sender.py:send():369] send: stats
+2023-07-24 15:46:11,077 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:11,456 INFO    Thread-12 :13853 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230724_083437-ztbkoaif/files/output.log
+2023-07-24 15:46:13,738 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:16,076 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:18,739 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:21,034 INFO    Thread-12 :13853 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230724_083437-ztbkoaif/files/output.log
+2023-07-24 15:46:21,342 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:23,740 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:26,343 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:28,740 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:31,344 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:33,741 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:37,037 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:38,387 INFO    Thread-12 :13853 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230724_083437-ztbkoaif/files/output.log
+2023-07-24 15:46:38,809 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:41,076 DEBUG   SenderThread:13853 [sender.py:send():369] send: stats
+2023-07-24 15:46:42,078 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:43,814 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:47,078 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:48,815 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:52,182 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:53,876 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:46:54,705 INFO    Thread-12 :13853 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230724_083437-ztbkoaif/files/output.log
+2023-07-24 15:46:56,173 INFO    Thread-12 :13853 [dir_watcher.py:_on_file_modified():289] file/dir modified: /media/leelabsg-storage1/yein/research/BrainAging/0722/wandb/run-20230724_083437-ztbkoaif/files/output.log
+2023-07-24 15:46:57,183 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:46:58,877 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:02,184 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:03,877 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:07,184 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:08,878 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:11,551 DEBUG   SenderThread:13853 [sender.py:send():369] send: stats
+2023-07-24 15:47:12,378 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:13,879 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:17,377 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:18,880 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:22,378 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:23,880 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:27,378 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:28,881 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:32,379 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
+2023-07-24 15:47:33,882 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-24 15:47:37,380 DEBUG   HandlerThread:13853 [handler.py:handle_request():144] handle_request: status_report
