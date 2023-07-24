@@ -149,12 +149,13 @@ class CNN_Trainer():
                 print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
                 print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
                 
-
+                self.save(self.epoch+1)
+                
                 # save model if better validation loss
                 if valid_mse_avg < valid_loss_min:
                     print(">>>>>>>>>>>>>>>>>> Loss updates")
                     valid_loss_min = valid_mse_avg
-                    self.save(self.epoch+1)
+                    # self.save(self.epoch+1)
                     print(f"    Best Saved model: best-{self.results_folder}-{self.epoch+1}.pth.tar")
 
 
