@@ -82,7 +82,7 @@ class CNN_Trainer():
                 # ----------- learning rate -----------
                 self.optimizer.step()
                 # learning rate update
-                if not isinstance(self.scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
+                if isinstance(self.scheduler, lr.CustomCosineAnnealingWarmUpRestarts):
                     self.scheduler.step()
 
                     wandb.log({
@@ -142,10 +142,9 @@ class CNN_Trainer():
                 # learning rate update
                 if isinstance(self.scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
                     self.scheduler.step(valid_mse_avg)  # Step the scheduler based on the validation loss
+                else: # CosineAnnealingLR
+                    self.scheduler.step()
 
-                wandb.log({
-                    "Learning rate": self.optimizer.param_groups[0]['lr']
-                })
                     
                 print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
                 print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
