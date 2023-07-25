@@ -53,5 +53,10 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
   - Epoch 6~ ) `CustomCosineAnnealingWarmUpStart` 경우, Load 후 초기 lr 셋팅 값이 너무 낮게 시작되는 문제 해결하기 위해 load 함수 수정
 - `main` Update
   - lr scheduler 별 setting 재수정
-- 추가 참고 사항
-  - 쉘 스크립트에서 `--ensemble_num` 옵션은 현재 모델 저장 폴더의 배치 사이즈를 구분하기 위해 사용 중.
+ 
+-----------------------------
+## 2023년 7월 25일
+
+**실험 내용:**
+- lr scheduler: `CustomCosineAnnealingWarmUpStart`으로 진행
+- save setting 변경 (best model --> epoch 단위 모든 model) 후 14 epoch 부터 재시작
