@@ -15,3 +15,14 @@ config: {}
 2023-07-25 08:41:45,678 INFO    MainThread:50717 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
 2023-07-25 08:41:45,683 INFO    MainThread:50717 [wandb_init.py:init():606] backend started and connected
 2023-07-25 08:41:45,685 INFO    MainThread:50717 [wandb_init.py:init():705] updated telemetry
+2023-07-25 08:41:45,781 INFO    MainThread:50717 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-07-25 08:41:46,588 INFO    MainThread:50717 [wandb_run.py:_on_init():2173] communicating current version
+2023-07-25 08:41:46,687 INFO    MainThread:50717 [wandb_run.py:_on_init():2182] got version response upgrade_message: "wandb version 0.15.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-07-25 08:41:46,687 INFO    MainThread:50717 [wandb_init.py:init():789] starting run threads in backend
+2023-07-25 08:41:53,042 INFO    MainThread:50717 [wandb_run.py:_console_start():2152] atexit reg
+2023-07-25 08:41:53,043 INFO    MainThread:50717 [wandb_run.py:_redirect():2007] redirect: SettingsConsole.WRAP_RAW
+2023-07-25 08:41:53,043 INFO    MainThread:50717 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2023-07-25 08:41:53,043 INFO    MainThread:50717 [wandb_run.py:_redirect():2097] Redirects installed.
+2023-07-25 08:41:53,044 INFO    MainThread:50717 [wandb_init.py:init():830] run started, returning control to user process
+2023-07-25 08:42:11,456 INFO    MainThread:50717 [wandb_watch.py:watch():51] Watching
