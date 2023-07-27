@@ -5,7 +5,6 @@ from pathlib import Path
 
 import torch
 from torch import nn
-from learning_rate import lr_scheduler as lr
 
 import time
 
@@ -20,8 +19,8 @@ class CNN_Trainer():
             dataloader_valid, 
             epochs, 
             optimizer,
-            scheduler
-            ):
+            scheduler,
+            n_iter):
         super(CNN_Trainer, self).__init__()
 
         self.model = model
@@ -34,33 +33,39 @@ class CNN_Trainer():
         self.mse_loss_fn = nn.MSELoss()
         self.mae_loss_fn = nn.L1Loss()
 
+        self.cv_num = n_iter
         self.results_folder = Path(results_folder)
         self.results_folder.mkdir(exist_ok=True)
-        
+
         self.train_mse_list, self.train_mae_list = [], []
         self.valid_mse_list, self.valid_mae_list = [], []
-        
+
         wandb.watch(self.model, log="all")
 
     def train(self):
         print("[ Start ]")
-        start = time.time()  # Start time
         
-        # Load model if exists
-        latest_model_path = sorted(self.results_folder.glob('3d_cnn-*.pth.tar'), key=lambda x: int(x.stem.split('-')[1].split('.')[0]))
+        latest_model_path = sorted(self.results_folder.glob(f'cv-{self.cv_num}-*.pth.tar'), 
+                                key=lambda x: int(x.stem.split('-')[2].split('.')[0]))
         if latest_model_path:
-            self.load(int(latest_model_path[-1].stem.split('-')[1].split('.')[0]))
+            # Parse the filename to get the epoch number
+            latest_epoch_num = int(latest_model_path[-1].stem.split('-')[2].split('.')[0]) - 1
+            # Load the model
+            self.load(latest_epoch_num)
+            # Update self.epoch
+            self.epoch = latest_epoch_num + 1
             
             if self.valid_mae_list:
-                valid_loss_min = self.valid_mae_list[-1]
+                valid_loss_min = self.valid_mse_list[-1]
             else:
                 valid_loss_min = 10000
-            print(f"Loaded model: {latest_model_path[-1]}")
+            
+            print(f"Loaded model: {latest_model_path[-1]}, Starting from epoch: {self.epoch} / {self.epochs}")
 
 
-        
         self.model.train()
         
+        start = time.time()  # Start time
         while self.epoch < self.epochs:
             print(f"\nEpoch {self.epoch+1:3d}: training")
             train_mse_sum, train_mae_sum = 0, 0
@@ -78,16 +83,12 @@ class CNN_Trainer():
                 mae_loss = self.mae_loss_fn(output, target)
                 
                 mse_loss.backward() # loss_fn should be the one used for backpropagation
-                
-                # ----------- learning rate -----------
                 self.optimizer.step()
-                # learning rate update
-                if isinstance(self.scheduler, lr.CustomCosineAnnealingWarmUpRestarts):
-                    self.scheduler.step()
-
-                    wandb.log({
-                        "Learning rate update": self.optimizer.param_groups[0]['lr']
-                    })
+                self.scheduler.step()
+                
+                wandb.log({
+                "Learning rate": self.optimizer.param_groups[0]['lr'],
+                })
 
                 train_mse_sum += mse_loss.item()*input.size(0)
                 train_mae_sum += mae_loss.item()*input.size(0)
@@ -100,8 +101,10 @@ class CNN_Trainer():
             
             wandb.log({
                 "Epoch": self.epoch+1,
+                "Learning rate": self.optimizer.param_groups[0]['lr'],
                 "Train MSE Loss": train_mse_avg,
-                "Train MAE Loss": train_mae_avg
+                "Train MAE Loss": train_mae_avg,
+                "CV Split Number": self.cv_num
             })
             
             end = time.time()  # End time
@@ -115,8 +118,6 @@ class CNN_Trainer():
             self.model.eval()
             with torch.no_grad():
                 valid_mse_sum, valid_mae_sum = 0, 0
-                
-                
                 for _, (input, target) in enumerate(tqdm(self.dataloader_valid)):
                     input = input.cuda(non_blocking=True)
                     target = target.reshape(-1, 1)
@@ -137,83 +138,54 @@ class CNN_Trainer():
 
                 self.valid_mse_list.append(valid_mse_avg)
                 self.valid_mae_list.append(valid_mae_avg)
-
-                    
-                # learning rate update
-                if isinstance(self.scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
-                    self.scheduler.step(valid_mse_avg)  # Step the scheduler based on the validation loss
-                else: # CosineAnnealingLR
-                    self.scheduler.step()
-
-                    
+                
+                self.scheduler.step(valid_mse_avg)
                 print(f"    Epoch {self.epoch+1:2d}: training mse loss = {train_mse_avg:.3f} / validation mse loss = {valid_mse_avg:.3f}")
                 print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
                 
-                self.save(self.epoch+1)
-                
-                # save model if better validation loss
-                if valid_mse_avg < valid_loss_min:
-                    print(">>>>>>>>>>>>>>>>>> Loss updates")
-                    valid_loss_min = valid_mse_avg
-                    # self.save(self.epoch+1)
-                    print(f"    Best Saved model: best-{self.results_folder}-{self.epoch+1}.pth.tar")
+                self.save(self.epoch)
 
-
+                # # Print model if better validation loss
+                # if valid_mse_avg < valid_loss_min:
+                #     print(">>>>>>>>>>>>>>>>>> Loss updates")
+                #     valid_loss_min = valid_mse_avg
+                #     print(f"    Best Saved model: best-{self.results_folder}-{self.epoch+1}.pth.tar")
+                    
                 wandb.log({
                     "Epoch": self.epoch+1,
+                    "Learning rate": self.optimizer.param_groups[0]['lr'],
                     "Validation MSE Loss": valid_mse_avg,
-                    "Validation MAE Loss": valid_mae_avg,
-                    "Learning rate": self.optimizer.param_groups[0]['lr']
+                    "Validation MAE Loss": valid_mae_avg
                 })
-
-
                 
             self.epoch += 1
             
-            end = time.time()  # End time
-            # Compute the duration and GPU usage
-            duration = (end - start) / 60
-            print(f"Epoch: {self.epoch+1}, duration for validation: {duration:.2f} minutes")
-            
         print("[ End of Epoch ]")
+        end = time.time()  # End time
+        # Compute the duration and GPU usage
+        duration = (end - start) / 60
+        print(f"Epoch: {self.epoch}, duration for validation: {duration:.2f} minutes")
         
         return self.train_mse_list, self.train_mae_list, self.valid_mse_list, self.valid_mae_list
+        
     
     def save(self, milestone):
-        torch.save({"epoch": milestone-1, 
+        torch.save({"epoch": milestone+1, 
                     "state_dict": self.model.state_dict(), 
-                    "optimizer" : self.optimizer.state_dict(),
-                    "scheduler" : self.scheduler.state_dict(),
-                    "learning_rate" : self.optimizer.param_groups[0]['lr'],
+                    "optimizer" : self.optimizer.state_dict(),  
                     "train_mse_list": self.train_mse_list,
                     "train_mae_list": self.train_mae_list,
                     "valid_mse_list": self.valid_mse_list,
                     "valid_mae_list": self.valid_mae_list},  
-                    f"{self.results_folder}/3d_cnn-{milestone}.pth.tar")
+                    f"{self.results_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
         
     def load(self, milestone):
-        checkpoint = torch.load(f"{self.results_folder}/3d_cnn-{milestone}.pth.tar")
+        checkpoint = torch.load(f"{self.results_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
         self.model.load_state_dict(checkpoint["state_dict"])
         self.optimizer.load_state_dict(checkpoint["optimizer"])
-        self.scheduler.load_state_dict(checkpoint["scheduler"])
-        
-        # Check the current learning rate and reset if necessary
-        learning_rate = checkpoint["learning_rate"]
-        print("Learning rate loading: ", learning_rate, flush=True)
-        if isinstance(self.scheduler, lr.CustomCosineAnnealingWarmUpRestarts) and learning_rate < 1e-7:
-            learning_rate = 1e-5  # Replace with your initial learning rate
-            for param_group in self.optimizer.param_groups:
-                param_group['lr'] = learning_rate
-            # # Reset the scheduler with the new learning rate
-            # self.scheduler = lr.CustomCosineAnnealingWarmUpRestarts(self.optimizer, T_0=100, T_up=10, T_mult=3, eta_max=1e-5, gamma=0.7)
-        
         self.epoch = checkpoint["epoch"] + 1  # Start the next epoch after the checkpoint
         self.train_mse_list = checkpoint.get("train_mse_list", [])
         self.train_mae_list = checkpoint.get("train_mae_list", [])
         self.valid_mse_list = checkpoint.get("valid_mse_list", [])
         self.valid_mae_list = checkpoint.get("valid_mae_list", [])
-
-
-
-
-
+    

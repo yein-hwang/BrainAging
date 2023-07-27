@@ -1,0 +1,13 @@
+Age distribution:  count    25656.000000
+mean        60.416004
+std          7.382716
+min         44.000000
+25%         54.750000
+50%         61.000000
+75%         66.000000
+max         77.000000
+Name: age, dtype: float64
+Traceback (most recent call last):
+  File "/media/leelabsg-storage1/yein/research/BrainAging/0726_titan/main_cv.py", line 47, in <module>
+    for train_indices, valid_indices in kf.split(indices):
+NameError: name 'indices' is not defined
