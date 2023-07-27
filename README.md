@@ -59,3 +59,10 @@ Investigation of Genetic Variants and Causal Biomarkers Associated with Brain Ag
 **실험 내용:**
 - lr scheduler: `CustomCosineAnnealingWarmUpStart`으로 진행
 - save setting 변경 (best model --> epoch 단위 모든 model) 후 14 epoch 부터 재시작
+
+-----------------------------
+## 2023년 7월 27일
+
+**실험 내용:**
+- single gpu & multi gpu 환경에서 model training 진행중
+- log: https://wandb.ai/yein-hwang/Brain_Aging_cv
