@@ -2162,3 +2162,34 @@ Epoch: 6, duration for training: 186.69 minutes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████▉| 200/201 [45:27<00:03,  3.17s/it]
+    Epoch  6: training mse loss = 19.688 / validation mse loss = 19.486
+
+100%|██████████| 201/201 [45:32<00:00, 13.60s/it]
+Epoch   7: training
+
+
+
+
+
+
+
+
