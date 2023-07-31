@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:4
 #SBATCH --partition=titan
 #SBATCH --nodelist=a07
-#SBATCH --time=0-10:30:00
+#SBATCH --time=0-9:30:00
 #SBATCH --mem=24000MB
 #SBATCH -o ./shell/esb1_8.txt
 

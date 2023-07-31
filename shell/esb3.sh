@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
 #SBATCH --partition=titan
-#SBATCH --time=0-10:30:00
+#SBATCH --time=0-9:30:00
 #SBATCH --nodelist=a04
 #SBATCH --mem=24000MB
 #SBATCH -o ./shell/esb3_11.txt

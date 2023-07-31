@@ -4,7 +4,7 @@
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:4
 #SBATCH --partition=titan
-#SBATCH --time=0-10:30:00
+#SBATCH --time=0-9:30:00
 #SBATCH --nodelist=a09
 #SBATCH --mem=24000MB
 #SBATCH -o ./shell/esb2_13.txt
