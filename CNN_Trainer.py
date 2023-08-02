@@ -68,6 +68,11 @@ class CNN_Trainer():
         start = time.time()  # Start time
         while self.epoch < self.epochs:
             print(f"\nEpoch {self.epoch+1:3d}: training")
+
+            # Every 3 epochs, reset the scheduler
+            if self.epoch % 3 == 0 and self.epoch > 0:
+                self.reset_scheduler()
+
             train_mse_sum, train_mae_sum = 0, 0
             for batch_ID, (input, target) in enumerate(tqdm(self.dataloader_train)):
                 input = input.cuda(non_blocking=True)
@@ -144,12 +149,6 @@ class CNN_Trainer():
                 print(f"    Epoch {self.epoch+1:2d}: training mae loss = {train_mae_avg:.3f} / validation mae loss = {valid_mae_avg:.3f}")
                 
                 self.save(self.epoch)
-
-                # # Print model if better validation loss
-                # if valid_mse_avg < valid_loss_min:
-                #     print(">>>>>>>>>>>>>>>>>> Loss updates")
-                #     valid_loss_min = valid_mse_avg
-                #     print(f"    Best Saved model: best-{self.results_folder}-{self.epoch+1}.pth.tar")
                     
                 wandb.log({
                     "Epoch": self.epoch+1,
@@ -176,8 +175,9 @@ class CNN_Trainer():
                     "train_mse_list": self.train_mse_list,
                     "train_mae_list": self.train_mae_list,
                     "valid_mse_list": self.valid_mse_list,
-                    "valid_mae_list": self.valid_mae_list},  
-                    f"{self.results_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
+                    "valid_mae_list": self.valid_mae_list,  
+                    "scheduler": self.scheduler.state_dict()  # Save scheduler state
+                   }, f"{self.results_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
         
     def load(self, milestone):
         checkpoint = torch.load(f"{self.results_folder}/cv-{self.cv_num}-{milestone+1}.pth.tar")
@@ -188,4 +188,5 @@ class CNN_Trainer():
         self.train_mae_list = checkpoint.get("train_mae_list", [])
         self.valid_mse_list = checkpoint.get("valid_mse_list", [])
         self.valid_mae_list = checkpoint.get("valid_mae_list", [])
+        self.scheduler.load_state_dict(checkpoint["scheduler"])  # Load scheduler state
     

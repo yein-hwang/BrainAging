@@ -7,7 +7,7 @@
 #SBATCH --time=0-11:00:00
 #SBATCH --nodelist=a04
 #SBATCH --mem=24000MB
-#SBATCH -o ./shell/esb3_16.txt
+#SBATCH -o ./shell/esb3_15.txt
 
-echo "esb_3 with four gpus"
+echo "esb_3 with four gpus, epoch 38~40 트레이닝"
 python main_cv.py --batch_size 32 --n_workers 8 --epochs 40 --output 'model/esb_' --ensemble_number 3 --lr 1e-6

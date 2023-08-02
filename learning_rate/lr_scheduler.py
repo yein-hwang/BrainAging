@@ -55,3 +55,13 @@ class CustomCosineAnnealingWarmUpRestarts(_LRScheduler):
         self.last_epoch = math.floor(epoch)
         for param_group, lr in zip(self.optimizer.param_groups, self.get_lr()):
             param_group['lr'] = lr
+            
+    
+    def reset(self):
+        self.eta_max = self.base_eta_max
+        self.T_i = self.T_0
+        self.cycle = 0
+        self.T_cur = -1
+        self.last_epoch = -1
+        for param_group in self.optimizer.param_groups:
+            param_group['lr'] = self.base_lrs[0]
