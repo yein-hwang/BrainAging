@@ -71,7 +71,7 @@ class CNN_Trainer():
 
             # Every 3 epochs, reset the scheduler
             if self.epoch % 3 == 0 and self.epoch > 0:
-                self.reset_scheduler()
+                self.scheduler.reset()
 
             train_mse_sum, train_mae_sum = 0, 0
             for batch_ID, (input, target) in enumerate(tqdm(self.dataloader_train)):
@@ -188,5 +188,9 @@ class CNN_Trainer():
         self.train_mae_list = checkpoint.get("train_mae_list", [])
         self.valid_mse_list = checkpoint.get("valid_mse_list", [])
         self.valid_mae_list = checkpoint.get("valid_mae_list", [])
-        self.scheduler.load_state_dict(checkpoint["scheduler"])  # Load scheduler state
+
+        # Only load scheduler state if it exists in the checkpoint
+        if "scheduler" in checkpoint:
+            self.scheduler.load_state_dict(checkpoint["scheduler"])
+
     

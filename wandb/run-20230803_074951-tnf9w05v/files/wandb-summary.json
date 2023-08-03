@@ -1,0 +1,1 @@
+{"Learning rate": 0.00024954999799505666, "_timestamp": 1691030151.2092385, "_runtime": 13559.120966434479, "_step": 603, "Epoch": 36, "Train MSE Loss": 12.044501931587286, "Train MAE Loss": 2.749084926818738, "CV Split Number": 0, "Validation MSE Loss": 12.436470077682367, "Validation MAE Loss": 2.7929901331802527, "_wandb": {"runtime": 13557}}
